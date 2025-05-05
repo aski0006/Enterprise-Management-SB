@@ -1,5 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.core.utils;
 
+import com.asaki0019.enterprisemanagementsb.core.authContext.AuthContext;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -33,7 +34,7 @@ public class JwtUtils {
      * @param permissions 用户权限集合
      * @return 生成的JWT字符串
      */
-    public static String generateToken(String username, Long userId, Set<String> permissions) {
+    public static String generateToken(String username, Long userId, HashSet<String> permissions) {
         return Jwts.builder()
                 .setSubject(username)
                 .claim("userId", userId)       // 用户ID存入claim
@@ -95,6 +96,7 @@ public class JwtUtils {
                 .parseClaimsJws(token)
                 .getBody();
     }
+
 }
 
 

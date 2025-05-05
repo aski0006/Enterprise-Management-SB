@@ -59,4 +59,5 @@ public class Result<T> {
                 .setMessage(errorCode.getFormattedMessage(args))
                 .setTraceID(MDC.get("TraceID"));
     }
+
 }
