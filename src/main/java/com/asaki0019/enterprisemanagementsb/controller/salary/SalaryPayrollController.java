@@ -39,7 +39,7 @@ public class SalaryPayrollController {
     }
     
     // 获取工资单列表
-    @GetMapping("/payslip/list")
+    @GetMapping("/salary/payslips")
     public Result<?> getPayslipList(
             @RequestParam String month,
             @RequestParam(required = false) String department,
@@ -50,7 +50,7 @@ public class SalaryPayrollController {
     }
     
     // 获取工资单详情
-    @GetMapping("/payslip/detail")
+    @GetMapping("/salary/payslips/detail")
     public Result<?> getPayslipDetail(
             @RequestParam String id,
             @RequestParam String month) {
@@ -58,19 +58,19 @@ public class SalaryPayrollController {
     }
     
     // 生成工资单
-    @PostMapping("/payslip/generate")
+    @PostMapping("/salary/payslips/generate")
     public Result<?> generatePayslip(@RequestBody PayslipRequest request) {
         return salaryPayrollService.generatePayslip(request);
     }
     
     // 发放工资单（批量）
-    @PostMapping("/payslip/distribute")
+    @PostMapping("/salary/payslips/distribute")
     public Result<?> distributePayslips(@RequestBody PayslipRequest request) {
         return salaryPayrollService.distributePayslips(request);
     }
     
     // 发放单个工资单
-    @PostMapping("/payslip/distribute-one")
+    @PostMapping("/salary/payslips/distribute-one")
     public Result<?> distributeOnePayslip(@RequestBody PayslipRequest request) {
         return salaryPayrollService.distributeOnePayslip(request);
     }

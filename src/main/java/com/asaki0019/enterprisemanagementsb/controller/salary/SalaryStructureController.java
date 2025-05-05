@@ -1,5 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.controller.salary;
 
+import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
 import com.asaki0019.enterprisemanagementsb.core.model.Result;
 import com.asaki0019.enterprisemanagementsb.request.salary.AdjustRuleRequest;
 import com.asaki0019.enterprisemanagementsb.request.salary.BonusSchemeRequest;
@@ -31,6 +32,10 @@ public class SalaryStructureController {
     // 保存薪资等级
     @PostMapping("/grade/save")
     public Result<?> saveSalaryGrade(@RequestBody SalaryGradeRequest request) {
+        if (request == null) {
+            return Result.failure(ErrorCode.BAD_REQUEST, "请求数据不能为空");
+        }
+        
         return salaryStructureService.saveSalaryGrade(request);
     }
     

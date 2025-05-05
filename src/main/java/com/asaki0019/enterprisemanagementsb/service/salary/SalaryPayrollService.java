@@ -254,14 +254,25 @@ public class SalaryPayrollService {
         try {
             String month = request.getMonth();
             String department = request.getDepartment();
+            List<String> employeeIds = request.getEmployeeIds();
             
             if (month == null || month.isEmpty()) {
                 return Result.failure(ErrorCode.BAD_REQUEST, "月份不能为空");
             }
             
             // 获取已确认的薪资核算数据
-            List<SalaryCalculation> calculations;
-            if (department != null && !department.isEmpty()) {
+            List<SalaryCalculation> calculations = new ArrayList<>();
+            
+            // 根据不同的请求情况获取数据
+            if (employeeIds != null && !employeeIds.isEmpty()) {
+                // 针对特定员工生成工资单
+                for (String employeeId : employeeIds) {
+                    List<SalaryCalculation> empCalcs = salaryCalculationRepository.findByEmployeeIdAndPeriod(employeeId, month);
+                    calculations.addAll(empCalcs.stream()
+                            .filter(calc -> "confirmed".equals(calc.getStatus()))
+                            .toList());
+                }
+            } else if (department != null && !department.isEmpty()) {
                 // 查找特定部门已确认的薪资核算数据
                 Page<SalaryCalculation> page = salaryCalculationRepository.findByPeriodAndDepartment(month, department, PageRequest.of(0, 1000));
                 calculations = page.getContent().stream()
@@ -272,7 +283,12 @@ public class SalaryPayrollService {
                 calculations = salaryCalculationRepository.findByPeriodAndStatus(month, "confirmed");
             }
             
+            if (calculations.isEmpty()) {
+                return Result.failure(ErrorCode.NOT_FOUND, "未找到已确认的薪资核算数据");
+            }
+            
             int generateCount = 0;
+            List<Map<String, Object>> generatedPayslips = new ArrayList<>();
             
             // 生成工资单
             for (SalaryCalculation calc : calculations) {
@@ -281,6 +297,12 @@ public class SalaryPayrollService {
                         calc.getEmployeeId(), month);
                 
                 if (!existingPayslips.isEmpty()) {
+                    // 如果已存在工资单，添加到结果列表
+                    Map<String, Object> payslipInfo = new HashMap<>();
+                    payslipInfo.put("employeeId", calc.getEmployeeId());
+                    payslipInfo.put("name", calc.getName());
+                    payslipInfo.put("status", "already_exists");
+                    generatedPayslips.add(payslipInfo);
                     continue; // 已存在工资单，跳过
                 }
                 
@@ -319,6 +341,14 @@ public class SalaryPayrollService {
                 payslip.setCreateTime(LocalDateTime.now());
                 
                 salaryPayslipRepository.save(payslip);
+                
+                // 添加到结果列表
+                Map<String, Object> payslipInfo = new HashMap<>();
+                payslipInfo.put("employeeId", calc.getEmployeeId());
+                payslipInfo.put("name", calc.getName());
+                payslipInfo.put("status", "generated");
+                generatedPayslips.add(payslipInfo);
+                
                 generateCount++;
             }
             
@@ -327,10 +357,11 @@ public class SalaryPayrollService {
             data.put("department", department);
             data.put("generateCount", generateCount);
             data.put("generateTime", LocalDateTime.now());
+            data.put("payslips", generatedPayslips);
             
             return Result.success(data);
         } catch (Exception e) {
-            sysLogger.error("生成工资单失败", e);
+            sysLogger.error("生成工资单失败: " + e.getMessage(), e);
             throw new BusinessException(ErrorCode.BUSINESS_ERROR, "生成工资单失败");
         }
     }

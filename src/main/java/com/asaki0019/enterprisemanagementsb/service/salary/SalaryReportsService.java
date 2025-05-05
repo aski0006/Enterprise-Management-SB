@@ -44,4 +44,24 @@ public interface SalaryReportsService {
      * @return 薪资成本分析数据
      */
     Result<?> getSalaryCostAnalysis(String startDate, String endDate, String department);
+
+    /**
+     * 获取加薪分析数据
+     *
+     * @param department 部门
+     * @param year       年份
+     * @param quarter    季度
+     * @return 加薪分析数据
+     */
+    Result<?> getRaiseAnalysis(String department, String year, String quarter);
+
+    /**
+     * 获取薪酬总结数据
+     *
+     * @param department 部门
+     * @param year       年份
+     * @param month      月份
+     * @return 薪酬总结数据
+     */
+    Result<?> getCompensationSummary(String department, String year, String month);
 } 

@@ -1,5 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.controller.salary;
 
+import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
 import com.asaki0019.enterprisemanagementsb.core.model.Result;
 import com.asaki0019.enterprisemanagementsb.service.salary.SalaryArchiveService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,28 +36,40 @@ public class SalaryArchiveController {
     
     // 获取员工薪资详情
     @GetMapping("/employee/detail")
-    public Result<?> getEmployeeSalaryDetail(@RequestParam String employeeId) {
+    public Result<?> getEmployeeSalaryDetail(@RequestParam(required = false) String employeeId) {
+        if (employeeId == null || employeeId.isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "员工ID不能为空");
+        }
         return salaryArchiveService.getEmployeeSalaryDetail(employeeId);
     }
     
     // 更新员工薪资信息
     @PostMapping("/employee/update")
     public Result<?> updateEmployeeSalary(@RequestBody Map<String, Object> request) {
+        if (request == null || request.get("employeeId") == null) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "员工ID不能为空");
+        }
         return salaryArchiveService.updateEmployeeSalary(request);
     }
     
     // 获取员工薪资变更历史
     @GetMapping("/employee/history")
-    public Result<?> getEmployeeSalaryHistory(@RequestParam String employeeId) {
+    public Result<?> getEmployeeSalaryHistory(@RequestParam(required = false) String employeeId) {
+        if (employeeId == null || employeeId.isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "员工ID不能为空");
+        }
         return salaryArchiveService.getEmployeeSalaryHistory(employeeId);
     }
     
     // 导入员工薪资档案
     @PostMapping("/import")
     public Result<?> importSalaryArchives(
-            @RequestParam String fileType,
+            @RequestParam(required = false) String fileType,
             @RequestBody Map<String, Object> request) {
         
+        if (fileType == null || fileType.isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "文件类型不能为空");
+        }
         return salaryArchiveService.importSalaryArchives(fileType, request);
     }
     

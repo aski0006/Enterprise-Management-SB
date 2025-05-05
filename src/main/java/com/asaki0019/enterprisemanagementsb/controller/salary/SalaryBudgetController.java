@@ -1,5 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.controller.salary;
 
+import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
 import com.asaki0019.enterprisemanagementsb.core.model.Result;
 import com.asaki0019.enterprisemanagementsb.service.salary.SalaryBudgetService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,24 +35,56 @@ public class SalaryBudgetController {
     }
     
     // 保存部门预算
-    @PostMapping("/department/save")
-    public Result<?> saveDepartmentBudget(@RequestBody Map<String, Object> request) {
-        return salaryBudgetService.saveDepartmentBudget(request);
+    @PostMapping("/department")
+    public Result<?> saveDepartmentBudget(@RequestBody Map<String, Object> requestBody) {
+        // 验证必要参数
+        if (requestBody == null || !requestBody.containsKey("departmentId") || 
+                requestBody.get("departmentId") == null || requestBody.get("departmentId").toString().isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "部门ID不能为空");
+        }
+        
+        if (!requestBody.containsKey("year") || requestBody.get("year") == null || requestBody.get("year").toString().isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "年份不能为空");
+        }
+        
+        if (!requestBody.containsKey("quarter") || requestBody.get("quarter") == null || requestBody.get("quarter").toString().isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "季度不能为空");
+        }
+        
+        if (!requestBody.containsKey("budgetAmount") || requestBody.get("budgetAmount") == null) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "预算金额不能为空");
+        }
+        
+        return salaryBudgetService.saveDepartmentBudget(requestBody);
     }
     
-    // 获取预算分配数据
+    // 获取预算配置数据
     @GetMapping("/allocation")
     public Result<?> getBudgetAllocation(
-            @RequestParam String departmentId,
-            @RequestParam(defaultValue = "2023") String year) {
+            @RequestParam(required = false) String departmentId,
+            @RequestParam(required = false) String year) {
+        
+        if (departmentId == null || departmentId.isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "部门ID不能为空");
+        }
         
         return salaryBudgetService.getBudgetAllocation(departmentId, year);
     }
     
-    // 保存预算分配
-    @PostMapping("/allocation/save")
-    public Result<?> saveBudgetAllocation(@RequestBody Map<String, Object> request) {
-        return salaryBudgetService.saveBudgetAllocation(request);
+    // 保存预算配置
+    @PostMapping("/allocation")
+    public Result<?> saveBudgetAllocation(@RequestBody Map<String, Object> requestBody) {
+        // 验证必要参数
+        if (requestBody == null || !requestBody.containsKey("departmentId") || 
+                requestBody.get("departmentId") == null || requestBody.get("departmentId").toString().isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "部门ID不能为空");
+        }
+        
+        if (!requestBody.containsKey("items") || requestBody.get("items") == null) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "预算分配明细不能为空");
+        }
+        
+        return salaryBudgetService.saveBudgetAllocation(requestBody);
     }
     
     // 获取预算执行报告

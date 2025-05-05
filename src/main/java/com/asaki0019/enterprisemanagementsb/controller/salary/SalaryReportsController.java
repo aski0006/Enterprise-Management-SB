@@ -1,5 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.controller.salary;
 
+import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
 import com.asaki0019.enterprisemanagementsb.core.model.Result;
 import com.asaki0019.enterprisemanagementsb.service.salary.SalaryReportsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +23,13 @@ public class SalaryReportsController {
     // 获取员工薪资趋势数据
     @GetMapping("/employee-trends")
     public Result<?> getEmployeeSalaryTrends(
-            @RequestParam String employeeId,
+            @RequestParam(required = false) String employeeId,
             @RequestParam(required = false) String startDate,
             @RequestParam(required = false) String endDate) {
+        
+        if (employeeId == null || employeeId.isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "员工ID不能为空");
+        }
         
         return salaryReportsService.getEmployeeSalaryTrends(employeeId, startDate, endDate);
     }
@@ -55,5 +60,25 @@ public class SalaryReportsController {
             @RequestParam(required = false) String department) {
         
         return salaryReportsService.getSalaryCostAnalysis(startDate, endDate, department);
+    }
+    
+    // 获取加薪分析数据
+    @GetMapping("/raise-analysis")
+    public Result<?> getRaiseAnalysis(
+            @RequestParam(required = false) String department,
+            @RequestParam(required = false) String year,
+            @RequestParam(required = false) String quarter) {
+        
+        return salaryReportsService.getRaiseAnalysis(department, year, quarter);
+    }
+    
+    // 获取薪酬总结数据
+    @GetMapping("/compensation-summary")
+    public Result<?> getCompensationSummary(
+            @RequestParam(required = false) String department,
+            @RequestParam(required = false) String year,
+            @RequestParam(required = false) String month) {
+        
+        return salaryReportsService.getCompensationSummary(department, year, month);
     }
 }

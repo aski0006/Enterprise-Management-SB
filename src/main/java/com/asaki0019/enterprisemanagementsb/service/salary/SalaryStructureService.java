@@ -83,6 +83,38 @@ public class SalaryStructureService {
     public Result<?> saveSalaryGrade(SalaryGradeRequest request) {
         try {
             // 校验请求参数
+            if (request == null) {
+                return Result.failure(ErrorCode.BAD_REQUEST, "请求数据不能为空");
+            }
+            
+            if (request.getGradeName() == null || request.getGradeName().trim().isEmpty()) {
+                return Result.failure(ErrorCode.BAD_REQUEST, "等级名称不能为空");
+            }
+            
+            if (request.getLevel() == null || request.getLevel().trim().isEmpty()) {
+                return Result.failure(ErrorCode.BAD_REQUEST, "等级级别不能为空");
+            }
+            
+            if (request.getDepartment() == null || request.getDepartment().trim().isEmpty()) {
+                return Result.failure(ErrorCode.BAD_REQUEST, "部门不能为空");
+            }
+            
+            if (request.getMinSalary() == null) {
+                return Result.failure(ErrorCode.BAD_REQUEST, "最低薪资不能为空");
+            }
+            
+            if (request.getMaxSalary() == null) {
+                return Result.failure(ErrorCode.BAD_REQUEST, "最高薪资不能为空");
+            }
+            
+            if (request.getBaseSalaryRatio() == null) {
+                return Result.failure(ErrorCode.BAD_REQUEST, "基本工资比例不能为空");
+            }
+            
+            if (request.getPerformanceRatio() == null) {
+                return Result.failure(ErrorCode.BAD_REQUEST, "绩效工资比例不能为空");
+            }
+            
             if (request.getMinSalary().compareTo(request.getMaxSalary()) > 0) {
                 return Result.failure(ErrorCode.BAD_REQUEST, "最低薪资不能高于最高薪资");
             }
@@ -94,33 +126,51 @@ public class SalaryStructureService {
                 salaryGrade = new SalaryGrade();
                 salaryGrade.setCreatedTime(LocalDateTime.now());
             } else {
-                salaryGrade = salaryGradeRepository.findById(request.getId())
-                        .orElseThrow(() -> new BusinessException(ErrorCode.NOT_FOUND, "薪资等级不存在"));
+                Optional<SalaryGrade> existingGrade = salaryGradeRepository.findById(request.getId());
+                if (existingGrade.isEmpty()) {
+                    return Result.failure(ErrorCode.NOT_FOUND, "薪资等级不存在");
+                }
+                salaryGrade = existingGrade.get();
             }
             
             // 复制属性
-            BeanUtils.copyProperties(request, salaryGrade);
+            salaryGrade.setGradeName(request.getGradeName());
+            salaryGrade.setLevel(request.getLevel());
+            salaryGrade.setDepartment(request.getDepartment());
+            salaryGrade.setPositionTypes(request.getPositionTypes());
+            salaryGrade.setMinSalary(request.getMinSalary());
+            salaryGrade.setMaxSalary(request.getMaxSalary());
+            salaryGrade.setBaseSalaryRatio(request.getBaseSalaryRatio());
+            salaryGrade.setPerformanceRatio(request.getPerformanceRatio());
             
             // 自动计算中位薪资
-            salaryGrade.setMidSalary(
-                    request.getMinSalary().add(request.getMaxSalary()).divide(BigDecimal.valueOf(2), 2, BigDecimal.ROUND_HALF_UP)
-            );
+            BigDecimal midSalary = request.getMinSalary().add(request.getMaxSalary())
+                    .divide(BigDecimal.valueOf(2), 2, BigDecimal.ROUND_HALF_UP);
+            salaryGrade.setMidSalary(midSalary);
             
             // 自动生成标题
             if (request.getTitle() == null || request.getTitle().isEmpty()) {
-                salaryGrade.setTitle(request.getGradeName() + request.getLevel());
+                salaryGrade.setTitle(request.getGradeName() + "-" + request.getLevel());
+            } else {
+                salaryGrade.setTitle(request.getTitle());
             }
             
+            // 确保更新时间被设置
             salaryGrade.setUpdatedTime(LocalDateTime.now());
             
-            salaryGradeRepository.save(salaryGrade);
+            // 保存到数据库
+            salaryGrade = salaryGradeRepository.save(salaryGrade);
+            
+            sysLogger.info("保存薪资等级成功: ID=" + salaryGrade.getId() 
+                    + ", 等级=" + salaryGrade.getGradeName() 
+                    + ", 级别=" + salaryGrade.getLevel());
             
             return Result.success(salaryGrade);
         } catch (BusinessException e) {
-            sysLogger.error("保存薪资等级失败", e);
+            sysLogger.error("保存薪资等级失败: " + e.getMessage(), e);
             throw e;
         } catch (Exception e) {
-            sysLogger.error("保存薪资等级失败", e);
+            sysLogger.error("保存薪资等级失败: " + e.getMessage(), e);
             throw new BusinessException(ErrorCode.BUSINESS_ERROR, "保存薪资等级失败");
         }
     }
