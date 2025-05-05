@@ -1,4 +1,4 @@
-package com.asaki0019.enterprisemanagementsb.mapper;
+package com.asaki0019.enterprisemanagementsb.mapper.enter;
 
 import com.asaki0019.enterprisemanagementsb.entities.enter.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;

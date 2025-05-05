@@ -7,7 +7,7 @@ import com.asaki0019.enterprisemanagementsb.core.sysLogger.SysLogger;
 import com.asaki0019.enterprisemanagementsb.core.utils.JwtUtils;
 import com.asaki0019.enterprisemanagementsb.core.utils.MessageConstructor;
 import com.asaki0019.enterprisemanagementsb.entities.enter.UserModel;
-import com.asaki0019.enterprisemanagementsb.mapper.UserRepository;
+import com.asaki0019.enterprisemanagementsb.mapper.enter.UserRepository;
 import com.asaki0019.enterprisemanagementsb.request.enter.LoginRequest;
 import com.asaki0019.enterprisemanagementsb.request.enter.RegisterRequest;
 import org.springframework.beans.factory.annotation.Autowired;
