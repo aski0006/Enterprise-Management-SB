@@ -18,7 +18,10 @@ public enum ErrorCode {
     PARAM_VALIDATION_ERROR("422", "参数校验错误"),
     INTERNAL_SERVER_ERROR("500", "服务器内部错误"),
     BUSINESS_ERROR("500", "业务异常"),
-    NO_PERMISSION("403", "没有权限");
+    NO_PERMISSION("403", "没有权限"),
+    EXIST_USER("500", "用户已存在" ),
+    PASSWORD_NOT_MATCH("500", "密码不匹配" ),
+    NOT_EXIST_USER("500", "用户不存在" );
 
     private final String code;
     private final String message;

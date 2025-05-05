@@ -34,7 +34,7 @@ public class JwtUtils {
      * @param permissions 用户权限集合
      * @return 生成的JWT字符串
      */
-    public static String generateToken(String username, Long userId, HashSet<String> permissions) {
+    public static String generateToken(String username, String userId, HashSet<String> permissions) {
         return Jwts.builder()
                 .setSubject(username)
                 .claim("userId", userId)       // 用户ID存入claim

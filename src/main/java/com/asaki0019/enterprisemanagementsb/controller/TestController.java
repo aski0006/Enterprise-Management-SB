@@ -48,7 +48,7 @@ public class TestController {
         // 从请求体中获取用户名和权限集合
         String username = request.getUsername();
         HashSet<String> permissionSet = request.getPermissionSet();
-        Long userId = request.getUserId();
+        String userId = request.getUserId();
         logger.info("用户登录, 用户名: " + username + ", 用户ID: " + userId + ", 权限: " + permissionSet);
         // 生成token
         String token = JwtUtils.generateToken(username, userId, permissionSet);
@@ -63,7 +63,7 @@ public class TestController {
     @Getter
     public static class LoginRequest {
         private String username;
-        private Long userId;
+        private String userId;
         private HashSet<String> permissionSet;
     }
 
