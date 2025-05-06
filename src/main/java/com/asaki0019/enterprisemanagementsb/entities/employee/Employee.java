@@ -26,7 +26,7 @@ public class Employee {
     @Column(name = "last_name", nullable = false, length = 50)
     private String lastName;
 
-    @Column(name = "gender", nullable = false, length = 1)
+    @Column(name = "gender", nullable = false, length = 20)
     private String gender;
 
     @Column(name = "birth_date", nullable = false)

@@ -11,6 +11,8 @@ public interface SysLogger {
      */
     void info(String message);
 
+    void debug(String message, Throwable e);
+
     /**
      * 记录警告级别的日志
      * @param message 警告信息
