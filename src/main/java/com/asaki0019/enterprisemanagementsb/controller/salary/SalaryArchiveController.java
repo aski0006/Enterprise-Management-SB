@@ -52,6 +52,29 @@ public class SalaryArchiveController {
         return salaryArchiveService.updateEmployeeSalary(request);
     }
     
+    // 调整员工单个薪资项
+    @PostMapping("/employee/adjust-item")
+    public Result<?> adjustSalaryItem(@RequestBody Map<String, Object> request) {
+        // 验证必填参数
+        if (request == null) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "请求参数不能为空");
+        }
+        
+        if (request.get("employeeId") == null || request.get("employeeId").toString().isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "员工ID不能为空");
+        }
+        
+        if (request.get("item") == null || request.get("item").toString().isEmpty()) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "薪资项目不能为空");
+        }
+        
+        if (request.get("value") == null) {
+            return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "调整值不能为空");
+        }
+        
+        return salaryArchiveService.adjustSalaryItem(request);
+    }
+    
     // 获取员工薪资变更历史
     @GetMapping("/employee/history")
     public Result<?> getEmployeeSalaryHistory(@RequestParam(required = false) String employeeId) {

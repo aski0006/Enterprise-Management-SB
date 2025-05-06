@@ -38,6 +38,14 @@ public interface SalaryArchiveService {
     Result<?> updateEmployeeSalary(Map<String, Object> request);
 
     /**
+     * 调整员工单个薪资项
+     *
+     * @param request 包含employeeId、item、value、adjustTime和operator等字段的请求
+     * @return 调整结果
+     */
+    Result<?> adjustSalaryItem(Map<String, Object> request);
+
+    /**
      * 获取员工薪资变更历史
      *
      * @param employeeId 员工ID

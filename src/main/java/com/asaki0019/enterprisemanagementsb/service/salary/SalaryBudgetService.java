@@ -55,4 +55,35 @@ public interface SalaryBudgetService {
      * @return 预算执行报告
      */
     Result<?> getBudgetExecutionReport(String department, String year, String quarter);
+
+    /**
+     * 获取预算预测
+     *
+     * @param year         年份
+     * @param department   部门（可选）
+     * @param months       预测月份数
+     * @return 预算预测数据
+     */
+    Result<?> getBudgetForecast(String year, String department, Integer months);
+
+    /**
+     * 获取预算调整历史记录
+     *
+     * @param departmentId 部门ID
+     * @param year         年份（可选）
+     * @param page         页码
+     * @param pageSize     每页数量
+     * @return 预算调整历史记录
+     */
+    Result<?> getBudgetAdjustmentHistory(String departmentId, String year, int page, int pageSize);
+
+    /**
+     * 获取预算执行分析
+     *
+     * @param department 部门（可选）
+     * @param year       年份（可选）
+     * @param quarter    季度（可选）
+     * @return 预算执行分析数据
+     */
+    Result<?> getBudgetExecutionAnalysis(String department, String year, String quarter);
 } 

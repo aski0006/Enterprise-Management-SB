@@ -225,6 +225,200 @@ public class SalaryArchiveServiceImpl implements SalaryArchiveService {
     }
 
     @Override
+    public Result<?> adjustSalaryItem(Map<String, Object> request) {
+        try {
+            String employeeId = request.get("employeeId") != null ? request.get("employeeId").toString() : null;
+            String item = request.get("item") != null ? request.get("item").toString() : null;
+            Object valueObj = request.get("value");
+            String adjustTime = request.get("adjustTime") != null ? request.get("adjustTime").toString() : null;
+            String operator = request.get("operator") != null ? request.get("operator").toString() : null;
+            
+            // 记录请求信息
+            sysLogger.info(
+                MessageConstructor.constructPlainMessage(
+                    "adjustSalaryItem",
+                    "employeeId", employeeId,
+                    "item", item,
+                    "value", String.valueOf(valueObj),
+                    "adjustTime", adjustTime,
+                    "operator", operator
+                )
+            );
+            
+            // 校验必要参数
+            if (employeeId == null || employeeId.isEmpty()) {
+                sysLogger.warn(
+                    MessageConstructor.constructPlainMessage(
+                        "adjustSalaryItem",
+                        "warning", "员工ID不能为空"
+                    )
+                );
+                return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "员工ID不能为空");
+            }
+            
+            if (item == null || item.isEmpty()) {
+                sysLogger.warn(
+                    MessageConstructor.constructPlainMessage(
+                        "adjustSalaryItem",
+                        "warning", "薪资项目不能为空"
+                    )
+                );
+                return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "薪资项目不能为空");
+            }
+            
+            if (valueObj == null) {
+                sysLogger.warn(
+                    MessageConstructor.constructPlainMessage(
+                        "adjustSalaryItem",
+                        "warning", "调整值不能为空"
+                    )
+                );
+                return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "调整值不能为空");
+            }
+            
+            // 检查薪资项目是否有效
+            if (!isValidSalaryItem(item)) {
+                sysLogger.warn(
+                    MessageConstructor.constructPlainMessage(
+                        "adjustSalaryItem",
+                        "warning", "无效的薪资项目: " + item
+                    )
+                );
+                return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "无效的薪资项目: " + item);
+            }
+            
+            // 获取员工详情
+            Map<String, Object> employeeDetail = generateEmployeeDetail(employeeId);
+            if (employeeDetail == null) {
+                sysLogger.warn(
+                    MessageConstructor.constructPlainMessage(
+                        "adjustSalaryItem",
+                        "warning", "未找到员工: " + employeeId
+                    )
+                );
+                return Result.failure(ErrorCode.NOT_FOUND, "未找到员工: " + employeeId);
+            }
+            
+            // 获取当前薪资值
+            double currentValue = 0;
+            if (employeeDetail.containsKey(item)) {
+                currentValue = Double.parseDouble(employeeDetail.get(item).toString());
+            }
+            
+            // 转换新值
+            double newValue;
+            if (valueObj instanceof Number) {
+                newValue = ((Number) valueObj).doubleValue();
+            } else {
+                try {
+                    newValue = Double.parseDouble(valueObj.toString());
+                } catch (NumberFormatException e) {
+                    sysLogger.warn(
+                        MessageConstructor.constructPlainMessage(
+                            "adjustSalaryItem",
+                            "warning", "调整值格式不正确: " + valueObj
+                        )
+                    );
+                    return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, "调整值格式不正确");
+                }
+            }
+            
+            // 更新薪资项
+            employeeDetail.put(item, newValue);
+            
+            // 如果调整的是基本薪资相关项目，重新计算总薪资
+            if (item.equals("baseSalary") || item.equals("performanceBonus") || item.equals("allowance")) {
+                double baseSalary = Double.parseDouble(employeeDetail.get("baseSalary").toString());
+                double performanceBonus = Double.parseDouble(employeeDetail.get("performanceBonus").toString());
+                double allowance = Double.parseDouble(employeeDetail.get("allowance").toString());
+                double totalSalary = baseSalary + performanceBonus + allowance;
+                employeeDetail.put("totalSalary", totalSalary);
+                
+                // 重新计算净薪资
+                double insuranceAndFund = (baseSalary * 0.08 + allowance * 0.08);
+                insuranceAndFund = Math.round(insuranceAndFund * 100.0) / 100.0;
+                
+                double individualIncomeTax = (baseSalary + performanceBonus + allowance) * 0.1 - 1000;
+                individualIncomeTax = Math.max(0, individualIncomeTax);
+                individualIncomeTax = Math.round(individualIncomeTax * 100.0) / 100.0;
+                
+                double netSalary = totalSalary - insuranceAndFund - individualIncomeTax;
+                netSalary = Math.round(netSalary * 100.0) / 100.0;
+                
+                employeeDetail.put("insuranceAndFund", insuranceAndFund);
+                employeeDetail.put("individualIncomeTax", individualIncomeTax);
+                employeeDetail.put("netSalary", netSalary);
+            }
+            
+            // 创建一条薪资变更记录
+            Map<String, Object> changeRecord = new HashMap<>();
+            changeRecord.put("date", adjustTime != null ? adjustTime : new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+            changeRecord.put("item", item);
+            changeRecord.put("beforeValue", currentValue);
+            changeRecord.put("afterValue", newValue);
+            changeRecord.put("changeAmount", newValue - currentValue);
+            
+            double changeRate = currentValue > 0 ? (newValue - currentValue) / currentValue * 100 : 100;
+            changeRecord.put("changeRate", Math.round(changeRate * 10.0) / 10.0);
+            
+            String reason = "单项调整: " + getItemDisplayName(item);
+            changeRecord.put("reason", reason);
+            changeRecord.put("approver", operator != null ? operator : "系统管理员");
+            
+            // 更新最后修改时间
+            employeeDetail.put("lastUpdated", new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+            
+            // 构建返回结果
+            Map<String, Object> result = new HashMap<>();
+            result.put("employeeId", employeeId);
+            result.put("name", employeeDetail.get("name"));
+            result.put("department", employeeDetail.get("department"));
+            result.put("position", employeeDetail.get("position"));
+            result.put("item", item);
+            result.put("itemDisplayName", getItemDisplayName(item));
+            result.put("beforeValue", currentValue);
+            result.put("afterValue", newValue);
+            result.put("changeAmount", newValue - currentValue);
+            result.put("changeRate", Math.round(changeRate * 10.0) / 10.0 + "%");
+            result.put("adjustTime", changeRecord.get("date"));
+            result.put("operator", changeRecord.get("approver"));
+            
+            sysLogger.info(
+                MessageConstructor.constructPlainMessage(
+                    "adjustSalaryItem",
+                    "employeeId", employeeId,
+                    "item", item,
+                    "beforeValue", String.valueOf(currentValue),
+                    "afterValue", String.valueOf(newValue),
+                    "status", "success"
+                )
+            );
+            
+            return Result.success(result);
+        } catch (BusinessException e) {
+            sysLogger.error(
+                MessageConstructor.constructPlainMessage(
+                    "adjustSalaryItem",
+                    "employeeId", String.valueOf(request.get("employeeId")),
+                    "item", String.valueOf(request.get("item")),
+                    "error", e.getMessage()
+                ), e
+            );
+            return Result.failure(ErrorCode.BUSINESS_ERROR);
+        } catch (Exception e) {
+            sysLogger.error(
+                MessageConstructor.constructPlainMessage(
+                    "adjustSalaryItem",
+                    "employeeId", String.valueOf(request.get("employeeId")),
+                    "item", String.valueOf(request.get("item")),
+                    "error", e.getMessage()
+                ), e
+            );
+            return Result.failure(ErrorCode.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @Override
     public Result<?> getEmployeeSalaryHistory(String employeeId) {
         try {
             // 记录请求信息
@@ -720,5 +914,24 @@ public class SalaryArchiveServiceImpl implements SalaryArchiveService {
     private String getRandomEducation() {
         String[] educations = {"大专", "本科", "硕士", "博士"};
         return educations[random.nextInt(educations.length)];
+    }
+    
+    // 辅助方法：检查薪资项目是否有效
+    private boolean isValidSalaryItem(String item) {
+        return "baseSalary".equals(item) || "performanceBonus".equals(item) || 
+               "allowance".equals(item) || "insuranceAndFund".equals(item) || 
+               "individualIncomeTax".equals(item);
+    }
+    
+    // 辅助方法：获取薪资项目的显示名称
+    private String getItemDisplayName(String item) {
+        switch (item) {
+            case "baseSalary": return "基本工资";
+            case "performanceBonus": return "绩效奖金";
+            case "allowance": return "津贴";
+            case "insuranceAndFund": return "社保公积金";
+            case "individualIncomeTax": return "个人所得税";
+            default: return item;
+        }
     }
 } 

@@ -16,4 +16,8 @@ public class SalaryCalculationRequest {
     private String value;
     
     private String reason;
+    
+    private String adjustTime;
+    
+    private String operator;
 } 
