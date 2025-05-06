@@ -10,5 +10,4 @@ public interface UserRepository extends JpaRepository<UserModel, String> {
     // save(), findById(), findAll(), deleteById(), count() 等
 
     UserModel findByUsername(String username);
-    List<UserModel> findByEmailEndsWith(String domain);
 }

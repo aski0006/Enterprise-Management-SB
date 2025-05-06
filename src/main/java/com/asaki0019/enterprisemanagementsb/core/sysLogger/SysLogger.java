@@ -24,6 +24,7 @@ public interface SysLogger {
      */
     void error(String message, Throwable e);
 
+    void error(String message);
     /**
      * 记录调试级别的日志
      * @param message 调试信息

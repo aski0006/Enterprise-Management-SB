@@ -26,7 +26,7 @@ public class AuthContext {
     /** 存储当前线程的权限信息 */
     private static final ThreadLocal<Set<String>> PERMISSIONS = new ThreadLocal<>();
     /** 存储当前线程的用户ID */
-    private static final ThreadLocal<Long> USER_ID = new ThreadLocal<>();
+    private static final ThreadLocal<String> USER_ID = new ThreadLocal<>();
 
     /**
      * 设置当前线程的权限信息
@@ -48,7 +48,7 @@ public class AuthContext {
      * 设置当前线程的用户ID
      * @param userId 用户ID
      */
-    public static void setUserId(Long userId) {
+    public static void setUserId(String userId) {
         USER_ID.set(userId);
     }
 
@@ -56,7 +56,7 @@ public class AuthContext {
      * 获取当前线程的用户ID
      * @return 用户ID
      */
-    public static Long getUserId() {
+    public static String getUserId() {
         return USER_ID.get();
     }
 

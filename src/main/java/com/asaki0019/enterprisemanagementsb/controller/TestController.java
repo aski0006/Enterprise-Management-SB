@@ -80,8 +80,8 @@ public class TestController {
     }
 
     @GetMapping("/test/data-auth")
-    public Result<?> testDataPermission(@RequestParam Long dataId) {
-        PermissionCheckUtils.checkDataPermission(123L);
+    public Result<?> testDataPermission(@RequestParam String dataId) {
+        PermissionCheckUtils.checkDataPermission("123");
         return Result.success("数据权限校验通过");
     }
 

@@ -59,7 +59,7 @@ public class AuthInfoFilter extends OncePerRequestFilter {
                 sysLogger.info("AuthInfoFilter.doFilterInternal : " + token);
                 if (JwtUtils.validateToken(token)) {
                     Claims claims = JwtUtils.parseToken(token);
-                    AuthContext.setUserId(claims.get("userId", Long.class));
+                    AuthContext.setUserId(claims.get("userId", String.class));
                     AuthContext.setPermissions(
                             new HashSet<>(claims.get("permissions", List.class))
                     );

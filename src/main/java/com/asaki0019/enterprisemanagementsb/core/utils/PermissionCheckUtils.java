@@ -62,8 +62,8 @@ public class PermissionCheckUtils {
      * @param dataOwnerId 数据所有者ID
      * @throws AuthException 如果当前用户不是数据所有者，抛出权限异常
      */
-    public static void checkDataPermission(Long dataOwnerId) {
-        Long currentUserId = AuthContext.getUserId();
+    public static void checkDataPermission(String dataOwnerId) {
+        String currentUserId = AuthContext.getUserId();
         if (!dataOwnerId.equals(currentUserId)) {
             throw new AuthException(ErrorCode.NO_PERMISSION);
         }

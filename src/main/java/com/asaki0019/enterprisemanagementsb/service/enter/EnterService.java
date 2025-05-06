@@ -1,5 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.service.enter;
 
+import com.asaki0019.enterprisemanagementsb.core.authContext.AuthContext;
 import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
 import com.asaki0019.enterprisemanagementsb.core.exception.BusinessException;
 import com.asaki0019.enterprisemanagementsb.core.model.Result;
@@ -71,6 +72,9 @@ public class EnterService {
             userData.put("name", user.getName());
             userData.put("role", user.getRole());
             data.put("user", userData);
+
+            AuthContext.setUserId(user.getId());
+            AuthContext.setPermissions(permissionSet);
             sysLogger.info(
                     MessageConstructor.constructPlainMessage(
                             "login",

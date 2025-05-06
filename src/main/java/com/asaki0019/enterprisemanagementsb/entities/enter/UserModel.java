@@ -1,13 +1,10 @@
 package com.asaki0019.enterprisemanagementsb.entities.enter;
 
-
+import com.asaki0019.enterprisemanagementsb.entities.employee.Employee;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.UuidGenerator;
 
-/**
- * 用户实体类
- */
 @Entity
 @Table(name = "user")
 @Data
@@ -49,4 +46,8 @@ public class UserModel {
      */
     @Column(unique = false, nullable = false)
     private String role;
+
+    @OneToOne
+    @JoinColumn(name = "employee_id") // 假设数据库中有一个 employee_id 列来引用员工
+    private Employee employee;
 }

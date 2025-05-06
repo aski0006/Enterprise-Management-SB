@@ -47,6 +47,11 @@ public class SysLoggerImpl implements SysLogger {
         logger.error(message, e);
     }
 
+    @Override
+    public void error(String message) {
+        logger.error(message);
+    }
+
     /**
      * 记录调试级别的日志
      *
