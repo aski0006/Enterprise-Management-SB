@@ -37,7 +37,7 @@ public class ShowPoolConfig {
                     "Leak Detection Threshold", hds.getLeakDetectionThreshold() + "ms",
                     "Initialization Fail Timeout", hds.getInitializationFailTimeout() + "ms"
             );
-            sysLogger.info(message);
+            sysLogger.info(message, false);
 
         }
     }

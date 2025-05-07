@@ -1,6 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.core.exception;
 
-import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
+import com.asaki0019.enterprisemanagementsb.enums.ErrorCode;
 import com.asaki0019.enterprisemanagementsb.core.exception.base.BaseException;
 
 /**

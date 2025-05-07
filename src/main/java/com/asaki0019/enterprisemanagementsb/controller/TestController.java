@@ -1,8 +1,8 @@
 package com.asaki0019.enterprisemanagementsb.controller;
 
 import com.asaki0019.enterprisemanagementsb.core.annotation.RequiresPermission;
-import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
-import com.asaki0019.enterprisemanagementsb.core.enums.Logical;
+import com.asaki0019.enterprisemanagementsb.enums.ErrorCode;
+import com.asaki0019.enterprisemanagementsb.enums.Logical;
 import com.asaki0019.enterprisemanagementsb.core.exception.AuthException;
 import com.asaki0019.enterprisemanagementsb.core.exception.BusinessException;
 import com.asaki0019.enterprisemanagementsb.core.model.Result;

@@ -1,6 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.core.exception;
 
-import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
+import com.asaki0019.enterprisemanagementsb.enums.ErrorCode;
 import com.asaki0019.enterprisemanagementsb.core.model.Result;
 import com.asaki0019.enterprisemanagementsb.core.sysLogger.SysLogger;
 import jakarta.servlet.http.HttpServletRequest;

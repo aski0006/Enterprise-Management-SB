@@ -1,7 +1,7 @@
 package com.asaki0019.enterprisemanagementsb.core.annotation;
 
 
-import com.asaki0019.enterprisemanagementsb.core.enums.Logical;
+import com.asaki0019.enterprisemanagementsb.enums.Logical;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

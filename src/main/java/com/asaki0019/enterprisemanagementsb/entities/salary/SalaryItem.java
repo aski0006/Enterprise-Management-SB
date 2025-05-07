@@ -1,27 +1,15 @@
 package com.asaki0019.enterprisemanagementsb.entities.salary;
 
-import jakarta.persistence.*;
+import com.asaki0019.enterprisemanagementsb.enums.ItemType;
+import jakarta.persistence.Embeddable;
 import lombok.Data;
-import java.util.List;
 
+import java.math.BigDecimal;
+
+@Embeddable  // 被嵌入到SalaryRecord表中
 @Data
-@Entity
-@Table(name = "salary_items")
 public class SalaryItem {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer itemId;
-
-    @Column(name = "item_name", nullable = false, unique = true, length = 50)
     private String itemName;
-
-    @Column(name = "item_type", nullable = false, length = 10)
-    private String itemType;
-
-    @Column(name = "calculation_rule", columnDefinition = "TEXT")
-    private String calculationRule;
-
-    
-    @OneToMany(mappedBy = "salaryItem")
-    private List<SalaryDetail> salaryDetails;
+    private ItemType itemType;
+    private BigDecimal amount;
 }

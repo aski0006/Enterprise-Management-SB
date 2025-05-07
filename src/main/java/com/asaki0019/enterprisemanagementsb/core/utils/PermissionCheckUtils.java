@@ -1,8 +1,8 @@
 package com.asaki0019.enterprisemanagementsb.core.utils;
 
 import com.asaki0019.enterprisemanagementsb.core.authContext.AuthContext;
-import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
-import com.asaki0019.enterprisemanagementsb.core.enums.Logical;
+import com.asaki0019.enterprisemanagementsb.enums.ErrorCode;
+import com.asaki0019.enterprisemanagementsb.enums.Logical;
 import com.asaki0019.enterprisemanagementsb.core.exception.AuthException;
 
 import java.util.Arrays;

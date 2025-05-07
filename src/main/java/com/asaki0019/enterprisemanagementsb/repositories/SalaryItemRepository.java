@@ -1,7 +1,0 @@
-package com.asaki0019.enterprisemanagementsb.repositories;
-
-import com.asaki0019.enterprisemanagementsb.entities.salary.SalaryItem;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface SalaryItemRepository extends JpaRepository<SalaryItem, Integer> {
-}

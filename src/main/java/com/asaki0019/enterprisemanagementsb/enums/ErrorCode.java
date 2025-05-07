@@ -1,8 +1,11 @@
-package com.asaki0019.enterprisemanagementsb.core.enums;
+package com.asaki0019.enterprisemanagementsb.enums;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+/**
+ * 错误码枚举类，定义系统中使用的各种错误代码及描述。
+ */
 @Getter
 @RequiredArgsConstructor
 public enum ErrorCode {
@@ -21,7 +24,8 @@ public enum ErrorCode {
     NO_PERMISSION("403", "没有权限"),
     EXIST_USER("500", "用户已存在" ),
     PASSWORD_NOT_MATCH("500", "密码不匹配" ),
-    NOT_EXIST_USER("500", "用户不存在" );
+    NOT_EXIST_USER("500", "用户不存在" ),
+    NOT_EXIST_ROLE("500", "角色不存在"); // 新增的角色不存在错误码
 
     private final String code;
     private final String message;

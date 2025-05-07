@@ -1,6 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.core.model;
 
-import com.asaki0019.enterprisemanagementsb.core.enums.ErrorCode;
+import com.asaki0019.enterprisemanagementsb.enums.ErrorCode;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import org.slf4j.MDC;

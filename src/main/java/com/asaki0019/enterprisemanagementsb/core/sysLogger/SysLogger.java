@@ -11,6 +11,8 @@ public interface SysLogger {
      */
     void info(String message);
 
+    void info(String message, boolean isRecordApiLog);
+
     void debug(String message, Throwable e);
 
     /**
