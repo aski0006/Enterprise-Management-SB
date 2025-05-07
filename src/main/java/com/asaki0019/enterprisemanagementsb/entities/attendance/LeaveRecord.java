@@ -5,13 +5,16 @@ import com.asaki0019.enterprisemanagementsb.enums.ApprovalStatus;
 import com.asaki0019.enterprisemanagementsb.enums.LeaveType;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
 // LeaveRecord.java
 @Entity
 @Table(name = "leave_records")
-@Data
+@Getter
+@Setter
 public class LeaveRecord {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long leaveId;

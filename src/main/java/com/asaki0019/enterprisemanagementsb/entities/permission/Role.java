@@ -1,7 +1,8 @@
 package com.asaki0019.enterprisemanagementsb.entities.permission;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,7 +10,8 @@ import java.util.Set;
 // Role.java
 @Entity
 @Table(name = "roles")
-@Data
+@Getter
+@Setter
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -3,6 +3,8 @@ import com.asaki0019.enterprisemanagementsb.entities.attendance.LeaveRecord;
 import com.asaki0019.enterprisemanagementsb.entities.permission.User;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -11,7 +13,8 @@ import java.util.List;
 // Employee.java
 @Entity
 @Table(name = "employees")
-@Data
+@Getter
+@Setter
 public class Employee {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer employeeId;
@@ -21,7 +24,7 @@ public class Employee {
     private String gender;
     private LocalDate birthDate;
 
-    @Column(unique = true, length = 20)
+    @Column(length = 20)
     private String idNumber;
 
     @ManyToOne(fetch = FetchType.LAZY)

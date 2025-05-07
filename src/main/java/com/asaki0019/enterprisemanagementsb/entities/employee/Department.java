@@ -2,6 +2,8 @@ package com.asaki0019.enterprisemanagementsb.entities.employee;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +11,8 @@ import java.util.List;
 // Department.java
 @Entity
 @Table(name = "departments")
-@Data
+@Getter
+@Setter
 public class Department {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer departmentId;

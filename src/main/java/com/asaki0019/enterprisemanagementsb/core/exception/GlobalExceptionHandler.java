@@ -47,7 +47,6 @@ public class GlobalExceptionHandler {
                 e.getErrorCode().getFormattedMessage(e.getArgs()),
                 request.getRequestURI()
         );
-        logger.warn(msg);
         return Result.failure(e.getErrorCode(), e.getArgs()).setTraceID(MDC.get("TraceID"));
     }
 
@@ -63,7 +62,6 @@ public class GlobalExceptionHandler {
                 ex.getErrorCode().getCode(),
                 ex.getErrorCode().getFormattedMessage(ex.getArgs())
         );
-        logger.warn(msg);
         return Result.failure(ex.getErrorCode(), ex.getArgs()).setTraceID(MDC.get("TraceID"));
     }
 
@@ -82,7 +80,6 @@ public class GlobalExceptionHandler {
                 "[Validation Exception] {0}",
                 errorMessage
         );
-        logger.warn(msg);
         return Result.failure(ErrorCode.PARAM_VALIDATION_ERROR, errorMessage).setTraceID(MDC.get("TraceID"));
     }
 
@@ -101,7 +98,6 @@ public class GlobalExceptionHandler {
                 ex.getMessage(),
                 request.getRequestURI()
         );
-        logger.error(msg, ex);
         return Result.failure(ErrorCode.INTERNAL_SERVER_ERROR).setTraceID(MDC.get("TraceID"));
     }
 }

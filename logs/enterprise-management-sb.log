@@ -586,7 +586,7 @@ java.lang.UnsupportedOperationException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:239)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:239)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -596,7 +596,7 @@ java.lang.UnsupportedOperationException: null
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -712,7 +712,7 @@ java.lang.UnsupportedOperationException: null
 01:14:57.186 [http-nio-8080-exec-2] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【register】 | username: test-username | role: common | success: register success
 01:14:57.234 [http-nio-8080-exec-2] [] ERROR c.a.e.c.sysLogger.impl.SysLoggerImpl - [Global Exception] java.lang.NullPointerException - Cannot invoke "java.util.List.add(Object)" because the return value of "com.asaki0019.enterprisemanagementsb.entities.employee.Employee.getRoles()" is null | URI: /api/enter/register
 java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because the return value of "com.asaki0019.enterprisemanagementsb.entities.employee.Employee.getRoles()" is null
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:234)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:234)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -722,7 +722,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" becau
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -1029,7 +1029,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:226)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:226)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -1039,7 +1039,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -1235,7 +1235,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:213)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:213)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -1245,7 +1245,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -1385,7 +1385,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:213)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:213)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -1395,7 +1395,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -1591,7 +1591,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement [Fie
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:212)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:212)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -1601,7 +1601,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement [Fie
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -1796,7 +1796,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:213)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:213)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -1806,7 +1806,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -2002,7 +2002,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:213)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:213)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -2012,7 +2012,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -2208,7 +2208,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:213)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:213)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -2218,7 +2218,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -2412,7 +2412,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:211)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:211)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -2422,7 +2422,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -2597,7 +2597,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:212)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:212)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -2607,7 +2607,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -2782,7 +2782,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:212)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:212)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -2792,7 +2792,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -2967,7 +2967,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:213)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:213)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -2977,7 +2977,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -3152,7 +3152,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:214)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:214)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -3162,7 +3162,7 @@ org.springframework.dao.DataIntegrityViolationException: not-null property refer
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -3339,7 +3339,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy135.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:220)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:220)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -3349,7 +3349,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -3694,7 +3694,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:214)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:214)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -3704,7 +3704,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -3900,7 +3900,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:214)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:214)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -3910,7 +3910,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -4050,7 +4050,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:214)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:214)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -4060,7 +4060,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -4256,7 +4256,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:214)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:214)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -4266,7 +4266,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -4462,7 +4462,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy133.save(Unknown Source)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService.registerService(EnterService.java:214)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.registerService(EnterService.java:214)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -4472,7 +4472,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -5105,7 +5105,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement [Fie
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -5215,7 +5215,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement [Fie
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
-	at com.asaki0019.enterprisemanagementsb.service.enter.EnterService$$SpringCGLIB$$0.registerService(<generated>)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.registerService(<generated>)
 	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.register(EnterController.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -6493,3 +6493,1247 @@ Caused by: java.lang.StackOverflowError: null
 17:04:51.647 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 17:04:51.648 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
 17:04:51.656 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:06:18.601 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 10228 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:06:18.623 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:06:21.752 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:06:22.043 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 262 ms. Found 6 JPA repository interfaces.
+18:06:24.173 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:06:24.202 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:06:24.203 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:06:24.281 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:06:24.282 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5474 ms
+18:06:24.859 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:06:25.285 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:06:25.598 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:06:26.810 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:06:27.026 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:06:27.296 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2976ca51
+18:06:27.299 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:06:27.461 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:06:27.462 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:06:27.553 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:06:29.947 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:06:30.510 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:06:31.859 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:06:32.673 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:06:32.681 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 15.548 seconds (process running for 17.442)
+18:06:44.294 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:06:44.295 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:06:44.296 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:06:45.119 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:12:50.831 [http-nio-8080-exec-6] [] WARN  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 用户名已存在
+18:13:33.913 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:13:33.923 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:13:33.927 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:13:33.929 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:13:33.937 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:13:39.256 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 28252 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:13:39.258 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:13:39.940 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:13:40.036 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 6 JPA repository interfaces.
+18:13:40.776 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:13:40.792 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:13:40.793 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:13:40.851 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:13:40.852 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1549 ms
+18:13:41.029 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:13:41.082 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:13:41.115 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:13:41.414 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:13:41.462 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:13:41.673 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@a120b9
+18:13:41.675 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:13:41.729 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:13:41.731 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:13:41.750 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:13:43.012 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:13:43.248 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:13:43.757 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:13:44.247 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:13:44.256 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.478 seconds (process running for 6.137)
+18:13:51.907 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:13:51.907 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:13:51.909 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:14:30.878 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:14:30.891 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:14:30.895 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:14:30.898 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:14:30.906 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:14:35.692 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 25636 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:14:35.695 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:14:36.334 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:14:36.419 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
+18:14:37.092 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:14:37.111 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:14:37.111 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:14:37.176 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:14:37.177 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1439 ms
+18:14:37.353 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:14:37.403 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:14:37.437 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:14:37.746 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:14:37.776 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:14:37.935 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@527d48db
+18:14:37.936 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:14:37.990 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:14:37.991 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:14:38.010 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:14:39.127 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:14:39.318 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:14:39.853 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:14:40.305 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:14:40.312 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.094 seconds (process running for 5.708)
+18:14:46.854 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:14:46.854 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:14:46.856 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:16:32.254 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:16:32.264 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:16:32.268 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:16:32.269 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:16:32.277 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:16:35.231 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 15948 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:16:35.233 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:16:35.873 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:16:35.958 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
+18:16:36.661 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:16:36.675 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:16:36.676 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:16:36.732 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:16:36.732 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1459 ms
+18:16:36.893 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:16:36.943 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:16:36.974 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:16:37.281 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:16:37.308 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:16:37.463 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b79ff1c
+18:16:37.465 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:16:37.519 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:16:37.520 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:16:37.537 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:16:38.657 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:16:38.854 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:16:39.349 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:16:39.781 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:16:39.790 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.043 seconds (process running for 5.664)
+18:16:48.960 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:16:48.961 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:16:48.962 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:18:41.804 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:18:41.817 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:18:41.822 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:18:41.824 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:18:41.830 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:20:00.093 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 27152 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:20:00.095 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:20:00.744 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:20:00.825 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 6 JPA repository interfaces.
+18:20:01.512 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:20:01.529 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:20:01.530 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:20:01.587 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:20:01.587 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1443 ms
+18:20:01.741 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:20:01.796 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:20:01.835 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:20:02.133 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:20:02.163 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:20:02.311 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@69499c6f
+18:20:02.313 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:20:02.367 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:20:02.369 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:20:02.387 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:20:03.486 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:20:03.691 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:20:04.207 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:20:04.653 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:20:04.660 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.023 seconds (process running for 5.644)
+18:20:22.641 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:20:22.652 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:20:22.655 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:20:22.657 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:20:22.665 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:20:27.349 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 27328 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:20:27.351 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:20:27.993 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:20:28.072 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 6 JPA repository interfaces.
+18:20:28.773 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:20:28.789 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:20:28.789 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:20:28.852 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:20:28.853 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1463 ms
+18:20:29.069 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:20:29.125 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:20:29.166 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:20:29.485 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:20:29.514 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:20:29.683 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@284c4f02
+18:20:29.685 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:20:29.719 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 20460 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:20:29.721 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:20:29.734 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:20:29.738 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:20:29.757 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:20:30.334 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:20:30.419 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 6 JPA repository interfaces.
+18:20:30.947 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:20:31.128 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:20:31.144 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:20:31.146 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:20:31.147 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:20:31.207 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:20:31.207 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1445 ms
+18:20:31.376 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:20:31.436 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:20:31.479 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:20:31.718 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:20:31.803 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:20:31.837 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:20:32.019 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e40fdbd
+18:20:32.021 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:20:32.066 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:20:32.069 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:20:32.086 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:20:32.173 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:20:32.179 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.275 seconds (process running for 5.918)
+18:20:33.207 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:20:33.402 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:20:33.873 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:20:34.231 [main] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+18:20:34.232 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:20:34.233 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:20:34.239 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:20:34.249 [main] [] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+18:20:34.305 [main] [] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+18:20:41.379 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:20:41.379 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:20:41.380 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:21:04.629 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:21:04.640 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:21:04.645 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:21:04.646 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:21:04.651 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:22:40.569 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 10144 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:22:40.571 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:22:41.204 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:22:41.288 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
+18:22:41.948 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:22:41.962 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:22:41.962 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:22:42.009 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:22:42.009 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1397 ms
+18:22:42.142 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:22:42.191 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:22:42.220 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:22:42.528 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:22:42.561 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:22:42.716 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@14dbfdb1
+18:22:42.718 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:22:42.764 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:22:42.766 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:22:42.786 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:22:43.964 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:22:44.151 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:22:44.665 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:22:45.092 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:22:45.100 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 4.982 seconds (process running for 5.601)
+18:22:48.208 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:22:48.209 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:22:48.210 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:24:19.805 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:24:19.816 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:24:19.819 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:24:19.821 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:24:19.829 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:24:24.561 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 25728 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:24:24.564 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:24:25.190 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:24:25.271 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 6 JPA repository interfaces.
+18:24:25.911 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:24:25.926 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:24:25.926 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:24:25.975 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:24:25.975 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1370 ms
+18:24:26.124 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:24:26.173 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:24:26.205 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:24:26.495 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:24:26.525 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:24:26.678 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@284c4f02
+18:24:26.680 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:24:26.734 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:24:26.736 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:24:26.751 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:24:27.874 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:24:28.056 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:24:28.561 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:24:28.975 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:24:28.982 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 4.869 seconds (process running for 5.481)
+18:24:38.998 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:24:38.998 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:24:39.000 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:24:43.088 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:24:43.099 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:24:43.102 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:24:43.103 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:24:43.110 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:25:05.497 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 15916 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:25:05.498 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:25:06.120 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:25:06.200 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 6 JPA repository interfaces.
+18:25:06.824 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:25:06.838 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:25:06.838 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:25:06.888 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:25:06.888 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1346 ms
+18:25:07.025 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:25:07.076 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:25:07.107 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:25:07.405 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:25:07.433 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:25:07.580 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@21a9f95b
+18:25:07.582 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:25:07.632 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:25:07.634 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:25:07.651 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:25:08.725 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:25:11.278 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:25:11.773 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:25:12.169 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:25:12.176 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 7.166 seconds (process running for 7.834)
+18:25:15.946 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:25:15.946 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:25:15.948 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:25:16.252 [http-nio-8080-exec-1] [] WARN  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 部门不存在
+18:25:59.080 [http-nio-8080-exec-4] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:26:08.757 [http-nio-8080-exec-6] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:27:27.678 [http-nio-8080-exec-8] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:28:39.287 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:28:39.302 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:28:39.306 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:28:39.308 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:28:39.315 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:28:44.165 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 22924 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:28:44.166 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:28:44.805 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:28:44.886 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 6 JPA repository interfaces.
+18:28:45.628 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:28:45.645 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:28:45.645 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:28:45.700 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:28:45.700 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1492 ms
+18:28:45.875 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:28:45.933 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:28:45.970 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:28:46.298 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:28:46.332 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:28:46.481 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@ac417a2
+18:28:46.483 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:28:46.545 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:28:46.547 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:28:46.566 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:28:47.729 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:28:47.934 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:28:48.466 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:28:48.915 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:28:48.922 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.235 seconds (process running for 5.881)
+18:28:56.785 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:28:56.786 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:28:56.787 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:28:57.111 [http-nio-8080-exec-2] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:28:57.117 [http-nio-8080-exec-2] [] ERROR c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册失败
+org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.asaki0019.enterprisemanagementsb.entities.log.Log.userId
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:307)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy129.save(Unknown Source)
+	at com.asaki0019.enterprisemanagementsb.core.sysLogger.impl.SysLoggerImpl.info(SysLoggerImpl.java:46)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.Register(EnterServiceImpl.java:134)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.Register(<generated>)
+	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.RegisterController(EnterController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.asaki0019.enterprisemanagementsb.core.filter.AuthInfoFilter.doFilterInternal(AuthInfoFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.asaki0019.enterprisemanagementsb.core.sysLogger.TraceIdFilter.doFilter(TraceIdFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.PropertyValueException: not-null property references a null or transient value: com.asaki0019.enterprisemanagementsb.entities.log.Log.userId
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:112)
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:57)
+	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:126)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:73)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:731)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 73 common frames omitted
+18:30:35.330 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:30:35.341 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:30:35.345 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:30:35.346 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:30:35.353 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:30:39.981 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 25396 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:30:39.983 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:30:40.631 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:30:40.714 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 6 JPA repository interfaces.
+18:30:41.397 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:30:41.411 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:30:41.411 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:30:41.465 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:30:41.465 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1439 ms
+18:30:41.630 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:30:41.681 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:30:41.714 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:30:42.051 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:30:42.083 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:30:42.234 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@14dbfdb1
+18:30:42.236 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:30:42.286 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:30:42.289 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:30:42.310 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:30:43.448 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:30:43.644 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:30:44.145 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:30:44.552 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:30:44.560 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.052 seconds (process running for 5.671)
+18:30:46.940 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:30:46.940 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:30:46.942 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:30:47.263 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:30:47.263 [http-nio-8080-exec-1] [] ERROR c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册失败
+java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "userId" is null
+	at com.asaki0019.enterprisemanagementsb.core.sysLogger.impl.SysLoggerImpl.createLog(SysLoggerImpl.java:36)
+	at com.asaki0019.enterprisemanagementsb.core.sysLogger.impl.SysLoggerImpl.info(SysLoggerImpl.java:48)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl.Register(EnterServiceImpl.java:134)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.Register(<generated>)
+	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.RegisterController(EnterController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.asaki0019.enterprisemanagementsb.core.filter.AuthInfoFilter.doFilterInternal(AuthInfoFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.asaki0019.enterprisemanagementsb.core.sysLogger.TraceIdFilter.doFilter(TraceIdFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+18:31:05.526 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:31:05.536 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:31:05.541 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:31:05.542 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:31:05.550 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:31:09.883 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 24948 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:31:09.886 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:31:10.521 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:31:10.597 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 6 JPA repository interfaces.
+18:31:11.225 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:31:11.240 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:31:11.240 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:31:11.290 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:31:11.290 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1360 ms
+18:31:11.417 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:31:11.464 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:31:11.496 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:31:11.782 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:31:11.813 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:31:11.968 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2335aef2
+18:31:11.970 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:31:12.015 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:31:12.018 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:31:12.035 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:31:13.135 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:31:13.339 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:31:13.820 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:31:14.209 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:31:14.216 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 4.786 seconds (process running for 5.384)
+18:31:18.901 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:31:18.902 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:31:18.903 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:31:19.202 [http-nio-8080-exec-2] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:31:53.939 [http-nio-8080-exec-3] [] WARN  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 用户名已存在
+18:32:17.964 [http-nio-8080-exec-4] [] WARN  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 邮箱已存在
+18:32:27.255 [http-nio-8080-exec-5] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:32:58.449 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:32:58.461 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:32:58.466 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:32:58.467 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:32:58.473 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:35:49.337 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 1416 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:35:49.339 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:35:49.945 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:35:50.025 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 6 JPA repository interfaces.
+18:35:50.650 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:35:50.663 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:35:50.664 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:35:50.709 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:35:50.709 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1326 ms
+18:35:50.856 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:35:50.909 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:35:50.942 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:35:51.209 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:35:51.239 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:35:51.390 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fbae40
+18:35:51.394 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:35:51.442 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:35:51.444 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:35:51.461 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:35:52.517 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:35:55.018 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:35:55.489 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:35:55.885 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:35:55.892 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 6.99 seconds (process running for 7.593)
+18:36:03.367 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:36:03.369 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:36:03.370 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:36:03.712 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:37:54.830 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:37:54.845 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:37:54.851 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:37:54.854 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:37:54.864 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:37:59.662 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 13740 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:37:59.664 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:38:00.289 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:38:00.367 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 6 JPA repository interfaces.
+18:38:01.017 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:38:01.032 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:38:01.032 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:38:01.085 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:38:01.085 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1381 ms
+18:38:01.235 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:38:01.286 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:38:01.320 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:38:01.629 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:38:01.670 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:38:01.853 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f9addd4
+18:38:01.855 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:38:01.915 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:38:01.920 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:38:01.942 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:38:03.060 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:38:03.265 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:38:03.786 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:38:04.228 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:38:04.235 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.031 seconds (process running for 5.675)
+18:38:06.861 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:38:06.861 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:38:06.862 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:38:47.009 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:38:47.021 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:38:47.025 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:38:47.026 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:38:47.032 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:43:38.297 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 28156 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:43:38.299 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:43:38.915 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:43:38.999 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 7 JPA repository interfaces.
+18:43:39.644 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:43:39.660 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:43:39.660 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:43:39.712 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:43:39.712 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1369 ms
+18:43:39.849 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:43:39.905 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:43:39.940 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:43:40.253 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:43:40.283 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:43:40.426 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@71b3ba5a
+18:43:40.427 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:43:40.478 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:43:40.480 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:43:40.497 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:43:41.577 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:43:41.762 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:43:42.276 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:43:42.706 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:43:42.712 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 4.882 seconds (process running for 5.485)
+18:43:47.796 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:43:47.796 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:43:47.797 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:44:37.777 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:44:37.789 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:44:37.793 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:44:37.796 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:44:37.803 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:44:50.371 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 10036 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:44:50.372 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:44:51.021 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:44:51.105 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 7 JPA repository interfaces.
+18:44:51.737 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:44:51.751 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:44:51.751 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:44:51.806 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:44:51.806 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1388 ms
+18:44:51.945 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:44:51.994 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:44:52.028 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:44:52.321 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:44:52.349 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:44:52.492 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@69499c6f
+18:44:52.494 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:44:52.547 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:44:52.548 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:44:52.565 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:44:53.666 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:44:56.101 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:44:56.639 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:44:57.054 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:44:57.061 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 7.214 seconds (process running for 7.905)
+18:45:05.212 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:45:05.213 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:45:05.214 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:45:05.548 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Register: 注册成功
+18:46:36.179 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:46:36.192 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:46:36.196 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:46:36.197 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:46:36.204 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:50:19.129 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 11544 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:50:19.130 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:50:19.765 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:50:19.851 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 7 JPA repository interfaces.
+18:50:20.519 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:50:20.536 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:50:20.536 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:50:20.591 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:50:20.591 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1417 ms
+18:50:20.751 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:50:20.801 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:50:20.834 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:50:21.112 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:50:21.142 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:50:21.306 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fbae40
+18:50:21.307 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:50:21.350 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:50:21.352 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:50:21.378 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:50:22.462 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:50:22.649 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:50:23.058 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:50:24.121 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:50:24.528 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:50:24.535 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.854 seconds (process running for 6.468)
+18:50:27.387 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:50:27.387 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:50:27.389 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+18:55:04.444 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:55:04.455 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:55:04.459 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:55:04.461 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:55:04.470 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:55:09.283 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 9820 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:55:09.284 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:55:09.867 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:55:09.948 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 7 JPA repository interfaces.
+18:55:10.565 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:55:10.579 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:55:10.579 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:55:10.626 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:55:10.628 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1298 ms
+18:55:10.782 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:55:10.834 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:55:10.869 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:55:11.155 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:55:11.185 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:55:11.341 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@284c4f02
+18:55:11.344 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:55:11.392 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:55:11.394 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:55:11.411 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:55:12.535 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:55:12.728 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:55:13.046 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:55:13.692 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:55:14.100 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:55:14.106 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.257 seconds (process running for 5.854)
+18:55:18.879 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:55:18.879 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:55:18.880 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:55:32.930 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:55:32.945 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:55:32.951 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:55:32.953 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+18:55:32.960 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+18:59:31.487 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 4504 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+18:59:31.490 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+18:59:32.140 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:59:32.225 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 7 JPA repository interfaces.
+18:59:32.946 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:59:32.961 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:59:32.961 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+18:59:33.019 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:59:33.020 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1485 ms
+18:59:33.187 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:59:33.243 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+18:59:33.280 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:59:33.611 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:59:33.644 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+18:59:33.812 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@77a9ac36
+18:59:33.815 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+18:59:33.869 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:59:33.870 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:59:33.888 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:59:35.120 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:59:35.315 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:59:37.174 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:59:38.124 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:59:39.015 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:59:39.030 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 8.056 seconds (process running for 10.697)
+18:59:43.656 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:59:43.657 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:59:43.658 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+19:00:01.200 [EnterpriseManagementDataSourcePool housekeeper] [] WARN  c.zaxxer.hikari.pool.ProxyLeakTask - Connection leak detection triggered for com.mysql.cj.jdbc.ConnectionImpl@77a9ac36 on thread http-nio-8080-exec-2, stack trace follows
+java.lang.Exception: Apparent connection leak detected
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:46)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:126)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:156)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:286)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:294)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:232)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:176)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:420)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:639)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:374)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.Login(<generated>)
+	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.LoginController(EnterController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.asaki0019.enterprisemanagementsb.core.filter.AuthInfoFilter.doFilterInternal(AuthInfoFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.asaki0019.enterprisemanagementsb.core.sysLogger.TraceIdFilter.doFilter(TraceIdFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+19:01:26.146 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+19:01:56.190 [SpringApplicationShutdownHook] [] INFO  o.s.c.s.DefaultLifecycleProcessor - Shutdown phase 2147482623 ends with 1 bean still running after timeout of 30000ms: [webServerGracefulShutdown]
+19:01:56.218 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown aborted with one or more requests still active
+19:02:01.207 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:02:01.210 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+19:02:01.218 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+19:02:09.699 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 10616 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+19:02:09.702 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+19:02:10.351 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:02:10.442 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 7 JPA repository interfaces.
+19:02:11.170 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+19:02:11.187 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:02:11.188 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+19:02:11.245 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:02:11.246 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1497 ms
+19:02:11.407 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:02:11.466 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+19:02:11.502 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+19:02:11.830 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:02:11.864 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+19:02:12.029 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e52d2f2
+19:02:12.032 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+19:02:12.089 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+19:02:12.090 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+19:02:12.108 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+19:02:13.346 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+19:02:13.527 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:02:13.969 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+19:02:14.622 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:02:15.067 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+19:02:15.074 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.898 seconds (process running for 6.647)
+19:02:17.608 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:02:17.608 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:02:17.609 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+19:02:23.225 [EnterpriseManagementDataSourcePool housekeeper] [] WARN  c.zaxxer.hikari.pool.ProxyLeakTask - Connection leak detection triggered for com.mysql.cj.jdbc.ConnectionImpl@4e52d2f2 on thread http-nio-8080-exec-2, stack trace follows
+java.lang.Exception: Apparent connection leak detected
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:46)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:126)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:156)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:286)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:294)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:232)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:176)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:420)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:639)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:374)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.asaki0019.enterprisemanagementsb.service.enter.EnterServiceImpl$$SpringCGLIB$$0.Login(<generated>)
+	at com.asaki0019.enterprisemanagementsb.controller.enter.EnterController.LoginController(EnterController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.asaki0019.enterprisemanagementsb.core.filter.AuthInfoFilter.doFilterInternal(AuthInfoFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.asaki0019.enterprisemanagementsb.core.sysLogger.TraceIdFilter.doFilter(TraceIdFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+19:03:22.478 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+19:03:22.699 [http-nio-8080-exec-2] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: test-username 登录成功
+19:03:22.894 [http-nio-8080-exec-2] [] INFO  c.zaxxer.hikari.pool.ProxyLeakTask - Previously reported leaked connection com.mysql.cj.jdbc.ConnectionImpl@4e52d2f2 on thread http-nio-8080-exec-2 was returned to the pool (unleaked)
+19:03:22.908 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+19:03:22.912 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:03:22.913 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+19:03:22.922 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+19:05:24.168 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 21.0.7 with PID 28160 (D:\Code\JavaCode\Enterprise-Management-SB\target\classes started by bronya in D:\Code\JavaCode\Enterprise-Management-SB)
+19:05:24.170 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+19:05:24.763 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:05:24.841 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 7 JPA repository interfaces.
+19:05:25.455 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+19:05:25.481 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:05:25.481 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+19:05:25.530 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:05:25.530 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1313 ms
+19:05:25.691 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:05:25.743 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+19:05:25.774 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+19:05:26.051 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:05:26.080 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+19:05:26.230 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@24eecabf
+19:05:26.232 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+19:05:26.280 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+19:05:26.281 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+19:05:26.299 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+19:05:27.397 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+19:05:27.579 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:05:27.959 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+19:05:28.532 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:05:28.920 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+19:05:28.926 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.199 seconds (process running for 5.804)
+19:05:42.355 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:05:42.356 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:05:42.357 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+19:05:42.645 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: test-username 登录成功
+19:05:48.440 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+19:05:48.451 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+19:05:48.460 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:05:48.462 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+19:05:48.469 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.

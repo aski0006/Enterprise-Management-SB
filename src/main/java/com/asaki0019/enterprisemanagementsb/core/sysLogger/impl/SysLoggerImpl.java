@@ -4,7 +4,7 @@ import com.asaki0019.enterprisemanagementsb.core.authContext.AuthContext;
 import com.asaki0019.enterprisemanagementsb.core.sysLogger.SysLogger;
 import com.asaki0019.enterprisemanagementsb.core.utils.MessageConstructor;
 import com.asaki0019.enterprisemanagementsb.entities.log.Log;
-import com.asaki0019.enterprisemanagementsb.repositories.log.LogRepository;
+import com.asaki0019.enterprisemanagementsb.repositories.LogRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +32,9 @@ public class SysLoggerImpl implements SysLogger {
 
     private Log createLog(String controller, String action, String message) {
         var log = new Log();
-        log.setUserId(AuthContext.getUserId());
+        String userId = AuthContext.getUserId();
+        if(userId == null) userId = "unknown";
+        log.setUserId(userId);
         log.setController(controller);
         log.setAction(action);
         log.setMessage(message);

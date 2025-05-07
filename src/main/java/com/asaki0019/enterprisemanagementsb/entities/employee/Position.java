@@ -2,11 +2,14 @@ package com.asaki0019.enterprisemanagementsb.entities.employee;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 // Position.java
 @Entity
 @Table(name = "positions")
-@Data
+@Getter
+@Setter
 public class Position {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer positionId;

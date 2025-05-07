@@ -45,7 +45,6 @@ public class PermissionAspect {
      */
     @Around(value = "@annotation(requiresPermission)", argNames = "joinPoint,requiresPermission")
     public Object checkPermission(ProceedingJoinPoint joinPoint, RequiresPermission requiresPermission) throws Throwable {
-        sysLogger.info("权限检测 : " + Arrays.toString(requiresPermission.value()));
         String[] requiredPermissions = requiresPermission.value();
         Logical logical = requiresPermission.logical();
         if (!PermissionCheckUtils.checkPermissions(requiredPermissions, logical)) {

@@ -49,7 +49,6 @@ public class TestController {
         String username = request.getUsername();
         HashSet<String> permissionSet = request.getPermissionSet();
         String userId = request.getUserId();
-        logger.info("用户登录, 用户名: " + username + ", 用户ID: " + userId + ", 权限: " + permissionSet);
         // 生成token
         String token = JwtUtils.generateToken(username, userId, permissionSet);
 

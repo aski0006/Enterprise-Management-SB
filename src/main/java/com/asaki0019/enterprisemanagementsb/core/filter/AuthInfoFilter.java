@@ -56,9 +56,10 @@ public class AuthInfoFilter extends OncePerRequestFilter {
             String authHeader = request.getHeader(AUTH_HEADER);
             if (StringUtils.hasText(authHeader) && authHeader.startsWith(BEARER_PREFIX)) {
                 String token = authHeader.substring(BEARER_PREFIX.length());
-                sysLogger.info("AuthInfoFilter.doFilterInternal : " + token);
+                sysLogger.info("AuthInfoFilter.doFilterInternal", "doFilterInternal: token = ", token);
                 if (JwtUtils.validateToken(token)) {
                     Claims claims = JwtUtils.parseToken(token);
+
                     AuthContext.setUserId(claims.get("userId", String.class));
                     AuthContext.setPermissions(
                             new HashSet<>(claims.get("permissions", List.class))

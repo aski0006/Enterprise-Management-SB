@@ -6,6 +6,8 @@ import com.asaki0019.enterprisemanagementsb.enums.AttendanceStatus;
 import com.asaki0019.enterprisemanagementsb.enums.LeaveType;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -13,7 +15,8 @@ import java.time.LocalDateTime;
 // AttendanceRecord.java
 @Entity
 @Table(name = "attendance_records")
-@Data
+@Getter
+@Setter
 public class AttendanceRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
