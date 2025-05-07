@@ -13,12 +13,10 @@ import javax.sql.DataSource;
 @Component
 public class ShowPoolConfig {
     private final DataSource dataSource;
-    private final SysLogger sysLogger;
 
     @Autowired
     public ShowPoolConfig(DataSource dataSource, SysLogger sysLogger) {
         this.dataSource = dataSource;
-        this.sysLogger = sysLogger;
     }
 
     @PostConstruct
@@ -37,7 +35,7 @@ public class ShowPoolConfig {
                     "Leak Detection Threshold", hds.getLeakDetectionThreshold() + "ms",
                     "Initialization Fail Timeout", hds.getInitializationFailTimeout() + "ms"
             );
-            sysLogger.info(message, false);
+            System.out.println(message);
 
         }
     }
