@@ -1,6 +1,6 @@
 package com.asaki0019.enterprisemanagementsb.request.position;
 
-import com.asaki0019.enterprisemanagementsb.entities.position.OnboardingApplication;
+import com.asaki0019.enterprisemanagementsb.entities.position.*;
 import com.asaki0019.enterprisemanagementsb.enums.ApprovalStatus;
 import lombok.Data;
 
@@ -45,20 +45,6 @@ public class OnboardingApplicationResponse {
         this.email = application.getEmail();
         this.joinDate = application.getJoinDate();
         this.idCard = application.getIdNumber();
-        this.idCardFile = application.getIdCardFiles().stream()
-                .map(f -> {
-                    FileInfo fileInfo = new FileInfo();
-                    fileInfo.setName(f.getName());
-                    fileInfo.setUrl(f.getUrl());
-                    return fileInfo;
-                }).toList();
-        this.contractFile = application.getContractFiles().stream()
-                .map(f -> {
-                    FileInfo fileInfo = new FileInfo();
-                    fileInfo.setName(f.getName());
-                    fileInfo.setUrl(f.getUrl());
-                    return fileInfo;
-                }).toList();
         this.rejectReason = application.getRejectReason();
     }
 

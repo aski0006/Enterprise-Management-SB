@@ -56,14 +56,6 @@ public class OnboardingApplication {
     @Column(length = 500)
     private String rejectReason;
 
-    @ElementCollection
-    @CollectionTable(name = "onboarding_id_card_files")
-    private List<FileInfo> idCardFiles = new ArrayList<>();
-
-    @ElementCollection
-    @CollectionTable(name = "onboarding_contract_files")
-    private List<FileInfo> contractFiles = new ArrayList<>();
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id", nullable = false)
     private Department department;
@@ -75,12 +67,4 @@ public class OnboardingApplication {
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id")
     private Employee employee;
-
-    @Embeddable
-    @Getter
-    @Setter
-    public static class FileInfo {
-        private String name;
-        private String url;
-    }
 }

@@ -14,7 +14,6 @@ import com.asaki0019.enterprisemanagementsb.request.position.OnboardingApplicati
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -28,24 +27,21 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
     private final PositionRepository positionRepository;
     private final EmployeeRepository employeeRepository;
     private final SysLogger logger;
-    private final FileStorageService fileStorageService;
 
     @Autowired
     public OnboardingApplicationServiceImpl(OnboardingApplicationRepository applicationRepository,
                                             DepartmentRepository departmentRepository,
                                             PositionRepository positionRepository,
                                             EmployeeRepository employeeRepository,
-                                            SysLogger logger,
-                                            FileStorageService fileStorageService) {
+                                            SysLogger logger) {
         this.applicationRepository = applicationRepository;
         this.departmentRepository = departmentRepository;
         this.positionRepository = positionRepository;
         this.employeeRepository = employeeRepository;
         this.logger = logger;
-        this.fileStorageService = fileStorageService;
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
     public Result<List<OnboardingApplicationResponse>> getAllApplications(String name) {
         try {
             List<OnboardingApplication> applications = name == null || name.isEmpty()
@@ -58,11 +54,14 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
             return Result.success(responses);
         } catch (Exception e) {
             logger.error("OnboardingApplicationServiceImpl", "getAllApplications", "Failed to fetch applications", e);
-            return (Result<List<OnboardingApplicationResponse>>) Result.failure(ErrorCode.INTERNAL_SERVER_ERROR, "获取入职申请列表失败");
+            return new Result<List<OnboardingApplicationResponse>>()
+                    .setCode(ErrorCode.INTERNAL_SERVER_ERROR.getCode())
+                    .setMessage("获取入职申请列表失败")
+                    .setData(null);
         }
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
     public Result<OnboardingApplicationResponse> getApplicationById(Integer id) {
         try {
             OnboardingApplication application = applicationRepository.findById(id)
@@ -71,10 +70,16 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
             return Result.success(new OnboardingApplicationResponse(application));
         } catch (IllegalArgumentException e) {
             logger.warn("OnboardingApplicationServiceImpl", "getApplicationById", "Application not found: " + id);
-            return (Result<OnboardingApplicationResponse>) Result.failure(ErrorCode.NOT_FOUND, "入职申请不存在");
+            return new Result<OnboardingApplicationResponse>()
+                    .setCode(ErrorCode.NOT_FOUND.getCode())
+                    .setMessage("入职申请不存在")
+                    .setData(null);
         } catch (Exception e) {
             logger.error("OnboardingApplicationServiceImpl", "getApplicationById", "Failed to fetch application", e);
-            return (Result<OnboardingApplicationResponse>) Result.failure(ErrorCode.INTERNAL_SERVER_ERROR, "获取入职申请详情失败");
+            return new Result<OnboardingApplicationResponse>()
+                    .setCode(ErrorCode.INTERNAL_SERVER_ERROR.getCode())
+                    .setMessage("获取入职申请详情失败")
+                    .setData(null);
         }
     }
 
@@ -107,7 +112,7 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
             OnboardingApplication application = new OnboardingApplication();
             application.setFirstName(firstName);
             application.setLastName(lastName);
-            application.setGender(request.getDepartment());
+            application.setGender(request.getGender());
             application.setBirthDate(request.getBirthDate());
             application.setIdNumber(request.getIdCard());
             application.setPhone(request.getPhone());
@@ -117,19 +122,6 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
             application.setJoinDate(request.getJoinDate());
             application.setApplyTime(LocalDateTime.now());
             application.setStatus(ApprovalStatus.PENDING);
-
-            if (request.getIdCardFile() != null && !request.getIdCardFile().isEmpty()) {
-                if (request.getIdCardFile().size() > 2) {
-                    return Result.failure(ErrorCode.BAD_REQUEST, "身份证照片最多上传2张");
-                }
-                application.setIdCardFiles(uploadFiles(request.getIdCardFile(), "id_card"));
-            }
-            if (request.getContractFile() != null && !request.getContractFile().isEmpty()) {
-                if (request.getContractFile().size() > 1) {
-                    return Result.failure(ErrorCode.BAD_REQUEST, "劳动合同最多上传1份");
-                }
-                application.setContractFiles(uploadFiles(request.getContractFile(), "contract"));
-            }
 
             applicationRepository.save(application);
             logger.info("OnboardingApplicationServiceImpl", "createApplication", "Created application for: " + firstName);
@@ -163,7 +155,6 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
                 employee.setIdNumber(application.getIdNumber());
                 employee.setDepartment(application.getDepartment());
                 employee.setPosition(application.getPosition());
-                // Note: user is nullable, so not set
                 employeeRepository.save(employee);
                 application.setEmployee(employee);
             }
@@ -179,21 +170,4 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
             return Result.failure(ErrorCode.INTERNAL_SERVER_ERROR, "更新状态失败");
         }
     }
-
-    private List<OnboardingApplication.FileInfo> uploadFiles(List<MultipartFile> files, String type) {
-        return files.stream().map(file -> {
-            String url = fileStorageService.uploadFile(file, type);
-            OnboardingApplication.FileInfo fileInfo = new OnboardingApplication.FileInfo();
-            fileInfo.setName(file.getOriginalFilename());
-            fileInfo.setUrl(url);
-            return fileInfo;
-        }).toList();
-    }
-}
-
-interface OnboardingApplicationService {
-    Result<List<OnboardingApplicationResponse>> getAllApplications(String name);
-    Result<OnboardingApplicationResponse> getApplicationById(Integer id);
-    Result<?> createApplication(OnboardingApplicationRequest request);
-    Result<?> updateApplicationStatus(Integer id, Map<String, String> request);
 }
