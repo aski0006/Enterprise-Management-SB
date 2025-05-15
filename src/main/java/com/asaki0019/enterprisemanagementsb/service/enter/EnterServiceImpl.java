@@ -82,7 +82,8 @@ public class EnterServiceImpl implements EnterService {
 
             Map<String, Object> data = new HashMap<>();
             data.put("token", token);
-            logger.info("EnterServiceImpl", "Login", username + " 登录成功");
+            logger.info("EnterServiceImpl", "Login", username + " 登录成功" +
+                    ", 权限: " + hashSetPermissions.stream().toList());
             return Result.success(data);
         } catch (Exception e) {
             logger.error("EnterServiceImpl", "Login", "登录失败", e);

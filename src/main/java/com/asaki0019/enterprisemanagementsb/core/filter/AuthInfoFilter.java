@@ -9,6 +9,7 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
@@ -49,14 +50,14 @@ public class AuthInfoFilter extends OncePerRequestFilter {
      * @throws ServletException Servlet异常
      */
     @Override
-    protected void doFilterInternal(HttpServletRequest request,
-                                    HttpServletResponse response,
-                                    FilterChain chain) throws IOException, ServletException {
+    protected void doFilterInternal(@NotNull HttpServletRequest request,
+                                    @NotNull HttpServletResponse response,
+                                    @NotNull FilterChain chain) throws IOException, ServletException {
         try {
             String authHeader = request.getHeader(AUTH_HEADER);
             if (StringUtils.hasText(authHeader) && authHeader.startsWith(BEARER_PREFIX)) {
                 String token = authHeader.substring(BEARER_PREFIX.length());
-                sysLogger.info("AuthInfoFilter.doFilterInternal", "doFilterInternal: token = ", token);
+                sysLogger.info("AuthInfoFilter.doFilterInternal", "doFilterInternal", "开始解析令牌", false);
                 if (JwtUtils.validateToken(token)) {
                     Claims claims = JwtUtils.parseToken(token);
 
@@ -64,6 +65,8 @@ public class AuthInfoFilter extends OncePerRequestFilter {
                     AuthContext.setPermissions(
                             new HashSet<>(claims.get("permissions", List.class))
                     );
+                }else{
+                    sysLogger.info("AuthInfoFilter.doFilterInternal", "doFilterInternal", "令牌无效", false);
                 }
             }
             chain.doFilter(request, response);

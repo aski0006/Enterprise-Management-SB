@@ -33,4 +33,3 @@ public class Role {
     private Set<User> users = new HashSet<>();
 }
 
-// User.java

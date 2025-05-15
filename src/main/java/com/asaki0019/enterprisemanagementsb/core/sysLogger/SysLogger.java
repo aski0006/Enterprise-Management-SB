@@ -7,6 +7,8 @@ package com.asaki0019.enterprisemanagementsb.core.sysLogger;
 public interface SysLogger {
     void info(String controller, String action, String message);
 
+    void info(String controller, String action, String message, boolean saved);
+
     void warn(String controller, String action, String message);
 
     void debug(String controller, String action, String message);

@@ -1,5 +1,7 @@
 package com.asaki0019.enterprisemanagementsb.core.utils;
 
+import java.util.HashMap;
+
 // MessageConstructor.java 增强版
 public class MessageConstructor {
     private static final String TITLE_BORDER = "=".repeat(60);
@@ -66,5 +68,24 @@ public class MessageConstructor {
         int padding = (width - text.length()) / 2;
         return String.format("%" + (padding + text.length()) + "s", text)
                 + String.format("%" + (width - padding - text.length()) + "s", "");
+    }
+
+    public static String constructParameterMessage(Object... params) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < params.length; i += 2) {
+            String key = String.valueOf(params[i]);
+            Object value = (i + 1 < params.length) ? params[i + 1] : "N/A";
+            sb.append(key).append(": ").append(value).append("\n");
+        }
+        return sb.toString();
+    }
+    public static HashMap<String, Object> dataConversion(Object... params) {
+        HashMap<String, Object> map = new HashMap<>();
+        for (int i = 0; i < params.length; i += 2) {
+            String key = String.valueOf(params[i]);
+            Object value = (i + 1 < params.length) ? params[i + 1] : "N/A";
+            map.put(key, value);
+        }
+        return map;
     }
 }

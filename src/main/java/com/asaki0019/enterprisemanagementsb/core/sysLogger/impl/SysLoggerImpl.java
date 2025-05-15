@@ -33,7 +33,7 @@ public class SysLoggerImpl implements SysLogger {
     private Log createLog(String controller, String action, String message) {
         var log = new Log();
         String userId = AuthContext.getUserId();
-        if(userId == null) userId = "unknown";
+        if(userId == null) userId = "系统访问";
         log.setUserId(userId);
         log.setController(controller);
         log.setAction(action);
@@ -46,6 +46,14 @@ public class SysLoggerImpl implements SysLogger {
     public void info(String controller, String action, String message) {
         logger.info(MessageConstructor.constructPlainMessage(controller, action, message));
         logRepository.save(createLog(controller, action, message));
+    }
+
+    @Override
+    public void info(String controller, String action, String message, boolean saved) {
+        logger.info(MessageConstructor.constructPlainMessage(controller, action, message));
+        if (saved) {
+            logRepository.save(createLog(controller, action, message));
+        }
     }
 
     @Override
