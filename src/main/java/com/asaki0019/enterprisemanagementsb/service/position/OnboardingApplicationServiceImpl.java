@@ -5,10 +5,13 @@ import com.asaki0019.enterprisemanagementsb.core.sysLogger.SysLogger;
 import com.asaki0019.enterprisemanagementsb.entities.employee.Department;
 import com.asaki0019.enterprisemanagementsb.entities.employee.Employee;
 import com.asaki0019.enterprisemanagementsb.entities.employee.Position;
+import com.asaki0019.enterprisemanagementsb.entities.permission.Role;
+import com.asaki0019.enterprisemanagementsb.entities.permission.User;
 import com.asaki0019.enterprisemanagementsb.entities.position.OnboardingApplication;
 import com.asaki0019.enterprisemanagementsb.enums.ApprovalStatus;
 import com.asaki0019.enterprisemanagementsb.enums.ErrorCode;
 import com.asaki0019.enterprisemanagementsb.repositories.*;
+import com.asaki0019.enterprisemanagementsb.repositories.position.OnboardingApplicationRepository;
 import com.asaki0019.enterprisemanagementsb.request.position.OnboardingApplicationRequest;
 import com.asaki0019.enterprisemanagementsb.request.position.OnboardingApplicationResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +19,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -26,6 +31,8 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
     private final DepartmentRepository departmentRepository;
     private final PositionRepository positionRepository;
     private final EmployeeRepository employeeRepository;
+    private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
     private final SysLogger logger;
 
     @Autowired
@@ -33,11 +40,16 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
                                             DepartmentRepository departmentRepository,
                                             PositionRepository positionRepository,
                                             EmployeeRepository employeeRepository,
+                                            UserRepository userRepository,
+                                            RoleRepository roleRepository,
                                             SysLogger logger) {
         this.applicationRepository = applicationRepository;
         this.departmentRepository = departmentRepository;
         this.positionRepository = positionRepository;
         this.employeeRepository = employeeRepository;
+        this.roleRepository = roleRepository;
+        this.userRepository  = userRepository;
+
         this.logger = logger;
     }
 
@@ -156,6 +168,33 @@ public class OnboardingApplicationServiceImpl implements OnboardingApplicationSe
                 employee.setDepartment(application.getDepartment());
                 employee.setPosition(application.getPosition());
                 employeeRepository.save(employee);
+                application.setEmployee(employee);
+
+                // Create User
+                User user = new User();
+                user.setUsername(application.getIdNumber().substring(application.getIdNumber().length() - 6)); // Use idNumber as username (unique)
+                user.setPassword("123456"); // Default password
+                user.setEmail(application.getEmail() != null ? application.getEmail() :
+                        application.getIdNumber() + "@example.com");
+                user.setName(application.getFirstName() + application.getLastName());
+
+                // Assign role with role_id = 2
+                Role employeeRole = roleRepository.findById(2)
+                        .orElseThrow(() -> new IllegalArgumentException("Role with ID 2 not found"));
+                Set<Role> roles = new HashSet<>();
+                roles.add(employeeRole);
+                user.setRoles(roles);
+
+                // 设置双向关联
+                user.setEmployee(employee);
+                employee.setUser(user);
+
+                // 保存用户（会更新 employees.user_id）
+                userRepository.save(user);
+                // 保存员工（确保 user_id 写入）
+                employeeRepository.save(employee);
+
+                // Link employee to application
                 application.setEmployee(employee);
             }
 

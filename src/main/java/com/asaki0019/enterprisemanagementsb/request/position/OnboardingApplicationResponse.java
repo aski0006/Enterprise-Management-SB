@@ -22,8 +22,6 @@ public class OnboardingApplicationResponse {
     private String email;
     private LocalDate joinDate;
     private String idCard;
-    private List<FileInfo> idCardFile;
-    private List<FileInfo> contractFile;
     private String rejectReason;
 
     @Data
