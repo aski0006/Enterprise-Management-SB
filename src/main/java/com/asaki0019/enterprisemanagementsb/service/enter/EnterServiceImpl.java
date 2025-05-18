@@ -81,7 +81,11 @@ public class EnterServiceImpl implements EnterService {
             String token = JwtUtils.generateToken(user.getUsername(), user.getUserId(), hashSetPermissions);
 
             Map<String, Object> data = new HashMap<>();
+            Map<String,Object> userData = new HashMap<>();
+            userData.put("name", user.getName());
+            userData.put("role", user.getRoles().stream().map(Role::getRoleName).toList().get(0));
             data.put("token", token);
+            data.put("user", userData);
             logger.info("EnterServiceImpl", "Login", username + " 登录成功" +
                     ", 权限: " + hashSetPermissions.stream().toList());
             return Result.success(data);

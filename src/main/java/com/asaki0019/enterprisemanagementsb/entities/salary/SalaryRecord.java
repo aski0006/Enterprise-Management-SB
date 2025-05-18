@@ -4,13 +4,16 @@ import com.asaki0019.enterprisemanagementsb.entities.employee.Employee;
 import com.asaki0019.enterprisemanagementsb.enums.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.YearMonth;
 import java.util.List;
 
 @Entity
 @Table(name = "salary_records")
-@Data
+@Getter
+@Setter
 public class SalaryRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
