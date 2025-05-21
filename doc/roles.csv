@@ -1,0 +1,4 @@
+role_id,description,role_name
+1,默认角色,USER
+2,员工,EMPLOYEE
+3,管理员,ADMIN

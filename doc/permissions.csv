@@ -1,0 +1,5 @@
+permission_id,description,permission_code
+1,允许查看基础信息,user:read
+2,允许员工权限读,employee:read
+3,允许员工权限写,employee:write
+4,允许系统权限操作,admin:all
