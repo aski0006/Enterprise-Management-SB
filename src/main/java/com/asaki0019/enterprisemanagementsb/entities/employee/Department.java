@@ -19,6 +19,9 @@ public class Department {
 
     @Column(unique = true, nullable = false, length = 50)
     private String name;
+    
+    @Column(columnDefinition = "TEXT")
+    private String description;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent_id")

@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public enum AttendanceStatus {
-    ABSENCE("出勤"),
     LATE("迟到"),
     EARLY_LEAVE("早退"),
     OVERTIME("加班"),

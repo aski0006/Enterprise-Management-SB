@@ -23,13 +23,16 @@ public class User {
     private String username;
 
     @Column(length = 50)
-    private String name = "default nickname";
+    private String name;
 
     @Column(nullable = false)
     private String password;
 
-    @Column(unique = true, nullable = false)
+    @Column(nullable = true)
     private String email;
+    
+    @Column(nullable = false)
+    private boolean enabled = true;
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_roles",
@@ -39,4 +42,8 @@ public class User {
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Employee employee;
+    
+    public void setNickname(String nickname) {
+        this.name = nickname;
+    }
 }

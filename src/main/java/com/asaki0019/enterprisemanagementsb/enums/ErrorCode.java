@@ -1,10 +1,7 @@
 package com.asaki0019.enterprisemanagementsb.enums;
 
-import com.asaki0019.enterprisemanagementsb.core.utils.MessageConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-
-import java.text.MessageFormat;
 
 /**
  * 错误码枚举类，定义系统中使用的各种错误代码及描述。
@@ -34,8 +31,6 @@ public enum ErrorCode {
     private final String message;
 
     public String getFormattedMessage(Object... args) {
-        return args.length > 0 ?
-                MessageFormat.format(this.message, args) :
-                this.message;
+        return String.format(message, args);
     }
 }

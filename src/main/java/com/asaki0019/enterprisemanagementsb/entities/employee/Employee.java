@@ -23,6 +23,9 @@ public class Employee {
     private String lastName;
     private String gender;
     private LocalDate birthDate;
+    
+    @Column(nullable = false)
+    private LocalDate hireDate;
 
     @Column(length = 20)
     private String idNumber;
