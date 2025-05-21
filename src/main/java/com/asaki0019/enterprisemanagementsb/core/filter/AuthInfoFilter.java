@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
@@ -23,6 +24,7 @@ import java.util.List;
  * 用于处理HTTP请求中的JWT令牌认证
  */
 @Component
+@CrossOrigin(origins = "http://localhost:5001")
 public class AuthInfoFilter extends OncePerRequestFilter {
     /** 认证头部字段名 */
     private static final String AUTH_HEADER = "Authorization";
@@ -56,10 +58,12 @@ public class AuthInfoFilter extends OncePerRequestFilter {
             String authHeader = request.getHeader(AUTH_HEADER);
             if (StringUtils.hasText(authHeader) && authHeader.startsWith(BEARER_PREFIX)) {
                 String token = authHeader.substring(BEARER_PREFIX.length());
-                sysLogger.info("AuthInfoFilter.doFilterInternal : " + token);
+                // 避免记录完整令牌，只记录令牌存在的信息
+                sysLogger.info("AuthInfoFilter.doFilterInternal", "doFilterInternal", "收到令牌请求");
                 if (JwtUtils.validateToken(token)) {
                     Claims claims = JwtUtils.parseToken(token);
-                    AuthContext.setUserId(claims.get("userId", Long.class));
+
+                    AuthContext.setUserId(claims.get("userId", String.class));
                     AuthContext.setPermissions(
                             new HashSet<>(claims.get("permissions", List.class))
                     );

@@ -1,9 +1,16 @@
 package com.asaki0019.enterprisemanagementsb.core.sysLogger.impl;
 
+import com.asaki0019.enterprisemanagementsb.core.authContext.AuthContext;
 import com.asaki0019.enterprisemanagementsb.core.sysLogger.SysLogger;
+import com.asaki0019.enterprisemanagementsb.core.utils.MessageConstructor;
+import com.asaki0019.enterprisemanagementsb.entities.log.Log;
+import com.asaki0019.enterprisemanagementsb.repositories.LogRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.Date;
 
 /**
  * 系统日志实现类
@@ -15,45 +22,45 @@ import org.springframework.stereotype.Component;
 public class SysLoggerImpl implements SysLogger {
     /** 日志记录器 */
     private static final Logger logger = LoggerFactory.getLogger(SysLoggerImpl.class);
+    private final LogRepository logRepository;
 
-    /**
-     * 记录信息级别的日志
-     *
-     * @param message 日志信息
-     */
-    @Override
-    public void info(String message) {
-        logger.info(message);
+    @Autowired
+    public SysLoggerImpl(LogRepository logRepository) {
+        this.logRepository = logRepository;
     }
 
-    /**
-     * 记录警告级别的日志
-     *
-     * @param message 警告信息
-     */
-    @Override
-    public void warn(String message) {
-        logger.warn(message);
+
+    private Log createLog(String controller, String action, String message) {
+        var log = new Log();
+        String userId = AuthContext.getUserId();
+        if(userId == null) userId = "unknown";
+        log.setUserId(userId);
+        log.setController(controller);
+        log.setAction(action);
+        log.setMessage(message);
+        log.setTimestamp(new Date());
+        return log;
     }
 
-    /**
-     * 记录错误级别的日志
-     *
-     * @param message 错误信息
-     * @param e 异常对象
-     */
     @Override
-    public void error(String message, Throwable e) {
-        logger.error(message, e);
+    public void info(String controller, String action, String message) {
+        logger.info(MessageConstructor.constructPlainMessage(controller, action, message));
+        logRepository.save(createLog(controller, action, message));
     }
 
-    /**
-     * 记录调试级别的日志
-     *
-     * @param message 调试信息
-     */
     @Override
-    public void debug(String message) {
-        logger.debug(message);
+    public void warn(String controller, String action, String message) {
+        logger.warn(MessageConstructor.constructPlainMessage(controller, action, message));
+        logRepository.save(createLog(controller, action, message));
+    }
+
+    @Override
+    public void debug(String controller, String action, String message) {
+        logger.debug(MessageConstructor.constructPlainMessage(controller, action, message));
+    }
+    @Override
+    public void error(String controller, String action, String message, Throwable e) {
+        logger.error(MessageConstructor.constructPlainMessage(controller, action, message), e);
+        logRepository.save(createLog(controller, action, message));
     }
 }
