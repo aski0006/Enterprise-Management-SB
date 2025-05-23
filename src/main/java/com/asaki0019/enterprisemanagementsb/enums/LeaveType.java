@@ -10,6 +10,7 @@ public enum LeaveType {
     SICK_LEAVE("病欠"),
     SPECIAL_LEAVE("特別休暇"),
     MOTHER_LEAVE("事假"),
+    OVERTIME("加班"),
     ;
 
     private final String value;

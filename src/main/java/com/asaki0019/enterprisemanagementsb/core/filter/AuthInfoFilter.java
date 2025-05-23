@@ -10,6 +10,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -23,6 +24,7 @@ import java.util.List;
  * 用于处理HTTP请求中的JWT令牌认证
  */
 @Component
+@Order(2)
 public class AuthInfoFilter extends OncePerRequestFilter {
     /** 认证头部字段名 */
     private static final String AUTH_HEADER = "Authorization";
@@ -36,6 +38,7 @@ public class AuthInfoFilter extends OncePerRequestFilter {
      * @param sysLogger 系统日志记录器
      */
     @Autowired
+
     public AuthInfoFilter(SysLogger sysLogger) {
         this.sysLogger = sysLogger;
     }
@@ -75,4 +78,5 @@ public class AuthInfoFilter extends OncePerRequestFilter {
             AuthContext.clear(); // 确保在请求处理完毕后清理
         }
     }
-}
+   }
+

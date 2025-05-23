@@ -18,7 +18,6 @@ import java.util.List;
 public class Employee {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer employeeId;
-
     private String firstName;
     private String lastName;
     private String gender;

@@ -5,6 +5,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.util.Date;
@@ -15,6 +16,7 @@ import java.util.Set;
 /**
  * JWT工具类，用于处理JSON Web Token的生成和解析
  */
+@Component
 public class JwtUtils {
     /**
      * 使用HMAC-SHA256算法的密钥
@@ -96,6 +98,7 @@ public class JwtUtils {
                 .parseClaimsJws(token)
                 .getBody();
     }
+
 
 }
 
