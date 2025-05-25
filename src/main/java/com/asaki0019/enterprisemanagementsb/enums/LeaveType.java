@@ -6,14 +6,13 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public enum LeaveType {
-    ANNUAL_LEAVE("年次休暇"),
-    SICK_LEAVE("病欠"),
-    SPECIAL_LEAVE("特別休暇"),
-    MOTHER_LEAVE("事假"),
-    PERSONAL_LEAVE("私事假"),
-    COMPENSATORY_LEAVE("调休假"),
+    ANNUAL_LEAVE("年假"),
+    SICK_LEAVE("病假"),
+    PERSONAL_LEAVE("事假"),
     MARRIAGE_LEAVE("婚假"),
-    ;
+    MATERNITY_LEAVE("产假"),
+    BEREAVEMENT_LEAVE("丧假"),
+    COMPENSATORY_LEAVE("调休");
 
-    private final String value;
+    private final String description;
 }

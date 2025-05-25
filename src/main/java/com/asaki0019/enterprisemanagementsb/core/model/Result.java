@@ -36,7 +36,7 @@ public class Result<T> {
      * 创建成功响应结果
      * @param data 响应数据
      * @param <T> 响应数据类型
-     * @return 成功的响应结果
+     * @return 成功地响应结果
      */
     public static <T> Result<T> success(T data) {
         Result<T> result = new Result<>();

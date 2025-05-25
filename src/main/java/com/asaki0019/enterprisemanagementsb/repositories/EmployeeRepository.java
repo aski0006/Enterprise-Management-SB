@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 员工仓库
@@ -22,4 +23,12 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer>, Jp
      */
     @Query("SELECT e FROM Employee e WHERE e.department.name = :departmentName")
     List<Employee> findByDepartmentName(@Param("departmentName") String departmentName);
+
+    /**
+     * 通过姓和名查询员工
+     * @param firstName 名
+     * @param lastName 姓
+     * @return 员工
+     */
+    Optional<Employee> findByFirstNameAndLastName(String firstName, String lastName);
 }

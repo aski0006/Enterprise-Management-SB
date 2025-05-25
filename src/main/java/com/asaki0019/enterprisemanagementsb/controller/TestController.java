@@ -38,7 +38,10 @@ public class TestController {
             case "auth":
                 throw new AuthException(ErrorCode.INVALID_TOKEN, "Token已过期");
             case "validation":
-                throw new MethodArgumentNotValidException(null, null);
+                throw new MethodArgumentNotValidException(
+                    (org.springframework.core.MethodParameter) null, 
+                    org.springframework.validation.BindingResult.class.cast(null)
+                );
             default:
                 throw new RuntimeException("未知错误");
         }

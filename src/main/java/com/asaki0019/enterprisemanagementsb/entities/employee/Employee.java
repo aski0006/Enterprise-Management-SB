@@ -1,4 +1,5 @@
 package com.asaki0019.enterprisemanagementsb.entities.employee;
+
 import com.asaki0019.enterprisemanagementsb.entities.attendance.LeaveRecord;
 import com.asaki0019.enterprisemanagementsb.entities.permission.User;
 import jakarta.persistence.*;
@@ -16,14 +17,31 @@ import java.util.List;
 @Getter
 @Setter
 public class Employee {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer employeeId;
 
+    @Column(nullable = false)
     private String firstName;
+
+    @Column(nullable = false)
     private String lastName;
+
+    @Column(nullable = false, unique = true)
+    private String employeeNumber;
+
+    @Column(nullable = false)
     private String gender;
+
+    @Column
     private LocalDate birthDate;
-    
+
+    @Column(nullable = false)
+    private String email;
+
+    @Column
+    private String phone;
+
     @Column(nullable = false)
     private LocalDate hireDate;
 
@@ -44,5 +62,15 @@ public class Employee {
 
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private List<LeaveRecord> leaveRecords = new ArrayList<>();
+
+    public String getName() {
+        return firstName + " " + lastName;
+    }
+
+    public void setName(String fullName) {
+        String[] parts = fullName.split(" ", 2);
+        this.firstName = parts[0];
+        this.lastName = parts.length > 1 ? parts[1] : "";
+    }
 }
 
