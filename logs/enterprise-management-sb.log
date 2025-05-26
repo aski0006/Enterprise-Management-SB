@@ -1,33 +1,24 @@
-00:37:17.224 [EnterpriseManagementDataSourcePool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Thread starvation or clock leap detected (housekeeper delta=1h22m33s374ms490µs600ns).
-01:10:59.218 [EnterpriseManagementDataSourcePool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Thread starvation or clock leap detected (housekeeper delta=10m11s766ms602µs300ns).
-01:12:04.167 [http-nio-8080-exec-3] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-01:25:06.268 [http-nio-8080-exec-4] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-01:52:18.240 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-01:52:18.616 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-01:52:18.622 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-01:52:18.624 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-01:52:18.626 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-01:52:31.199 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 32224 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-01:52:31.201 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-01:52:32.687 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-01:52:32.818 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120 ms. Found 9 JPA repository interfaces.
-01:52:33.778 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-01:52:33.782 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-01:52:33.798 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-01:52:33.822 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-01:52:33.822 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-01:52:33.909 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-01:52:33.910 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2658 ms
-01:52:34.138 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-01:52:34.233 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-01:52:34.299 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-01:52:34.729 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-01:52:34.773 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-01:52:34.945 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@288409f0
-01:52:34.947 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-01:52:35.002 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-01:52:35.003 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-01:52:35.025 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+10:50:14.604 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 21868 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
+10:50:14.622 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+10:50:16.940 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:50:17.075 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122 ms. Found 9 JPA repository interfaces.
+10:50:18.156 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+10:50:18.158 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+10:50:18.183 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+10:50:18.198 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:50:18.199 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+10:50:18.301 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:50:18.302 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3589 ms
+10:50:18.495 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:50:18.591 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+10:50:18.682 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+10:50:19.144 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+10:50:19.184 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+10:50:19.482 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@10a0a1e
+10:50:19.484 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+10:50:19.571 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+10:50:19.573 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+10:50:19.600 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -35,49 +26,48 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-01:52:36.351 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-01:52:36.570 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-01:52:37.143 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-01:52:37.675 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-01:52:37.701 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+10:50:21.325 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+10:50:21.756 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:50:22.466 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+10:50:23.199 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:50:23.240 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 159ca786-297f-41b6-89ac-7b6e27a1d178
+Using generated security password: 27251808-d4a2-4b94-9661-1022b6aaafef
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-01:52:37.710 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-01:52:38.384 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-01:52:38.393 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 7.765 seconds (process running for 9.69)
-01:52:48.540 [http-nio-8080-exec-6] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-01:52:48.541 [http-nio-8080-exec-6] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-01:52:48.542 [http-nio-8080-exec-6] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-01:53:06.100 [http-nio-8080-exec-3] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-02:12:17.396 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-02:12:17.731 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-02:12:17.737 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-02:12:17.739 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-02:12:17.750 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-02:12:32.059 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 35260 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-02:12:32.062 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-02:12:32.850 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-02:12:32.947 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 9 JPA repository interfaces.
-02:12:33.586 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-02:12:33.589 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-02:12:33.593 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-02:12:33.604 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-02:12:33.605 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-02:12:33.681 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-02:12:33.681 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1578 ms
-02:12:33.832 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-02:12:33.918 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-02:12:33.971 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-02:12:34.271 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-02:12:34.305 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-02:12:34.443 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@73385d3f
-02:12:34.445 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-02:12:34.503 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-02:12:34.505 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-02:12:34.534 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+10:50:23.255 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+10:50:24.240 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+10:50:24.251 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 10.339 seconds (process running for 11.642)
+10:50:32.030 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:50:32.030 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:50:32.032 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11:06:57.177 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11:06:57.731 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+11:06:57.743 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:06:57.747 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+11:06:57.750 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+11:07:04.897 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 3824 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
+11:07:04.900 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+11:07:05.836 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:07:05.972 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 9 JPA repository interfaces.
+11:07:06.801 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:07:06.804 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+11:07:06.810 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+11:07:06.827 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:07:06.827 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+11:07:06.924 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:07:06.925 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1974 ms
+11:07:07.138 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:07:07.236 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+11:07:07.310 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11:07:07.671 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:07:07.708 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+11:07:07.906 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6231f77a
+11:07:07.908 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+11:07:07.961 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+11:07:07.962 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+11:07:07.986 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -85,70 +75,50 @@ This generated password is for development use only. Your security configuration
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-02:12:35.782 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-02:12:36.044 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-02:12:36.459 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-02:12:36.921 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-02:12:36.943 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+11:07:09.480 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:07:09.725 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:07:10.372 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11:07:11.026 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:07:11.056 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 03366c75-d1eb-47a3-a10c-ef43f144db40
+Using generated security password: 1259629b-b000-4966-9492-a4fa1c250019
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-02:12:36.951 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-02:12:37.549 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-02:12:37.558 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.965 seconds (process running for 6.71)
-02:13:30.107 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-02:13:30.108 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-02:13:30.109 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-02:13:30.423 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-02:14:54.204 [http-nio-8080-exec-5] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-02:15:52.670 [http-nio-8080-exec-9] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-02:24:43.564 [http-nio-8080-exec-10] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-02:56:22.973 [http-nio-8080-exec-9] [] WARN  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: 用户不存在
-03:00:21.824 [http-nio-8080-exec-10] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-03:00:21.914 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJlbXBsb3llZTptYW5hZ2UiLCJzYWxhcnk6dmlldyJdLCJpYXQiOjE3NDc5NDA0MjEsImV4cCI6MTc0ODgwNDQyMX0.16MNS6VoQmHXk9GODDTl2Ks8MbrxsQeOSyIPfLEPbRQ
-03:00:21.944 [http-nio-8080-exec-1] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-03:00:21.944 [http-nio-8080-exec-1] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-03:08:22.784 [http-nio-8080-exec-5] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-03:08:22.821 [http-nio-8080-exec-6] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJlbXBsb3llZTptYW5hZ2UiLCJzYWxhcnk6dmlldyJdLCJpYXQiOjE3NDc5NDA5MDIsImV4cCI6MTc0ODgwNDkwMn0.67oLOrz6EIx273AXIDxMv-z9rb1KS1PK-W9HOh8-hLE
-03:08:22.826 [http-nio-8080-exec-6] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-03:08:22.826 [http-nio-8080-exec-6] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-03:17:04.908 [http-nio-8080-exec-3] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-03:19:17.794 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-03:19:17.834 [http-nio-8080-exec-8] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJzYWxhcnk6dmlldyIsImVtcGxveWVlOm1hbmFnZSJdLCJpYXQiOjE3NDc5NDE1NTcsImV4cCI6MTc0ODgwNTU1N30.hfW_hFtH9mYN8bFO9J7_ip5FWY_dm6lKQSiQrd_5DnU
-03:19:17.839 [http-nio-8080-exec-8] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-03:19:17.839 [http-nio-8080-exec-8] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-03:20:11.961 [http-nio-8080-exec-4] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-03:20:12.028 [http-nio-8080-exec-5] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJzYWxhcnk6dmlldyIsImVtcGxveWVlOm1hbmFnZSJdLCJpYXQiOjE3NDc5NDE2MTEsImV4cCI6MTc0ODgwNTYxMX0.i2kskttg0GOdq9WEQtGcYA0E63mw7RnJgzZYaxNhKI0
-03:20:12.032 [http-nio-8080-exec-5] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-03:20:12.032 [http-nio-8080-exec-5] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-03:27:14.392 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-03:27:14.790 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-03:27:14.795 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-03:27:14.797 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-03:27:14.802 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-13:32:34.978 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 14452 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-13:32:34.981 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-13:32:35.961 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-13:32:36.106 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133 ms. Found 9 JPA repository interfaces.
-13:32:37.066 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-13:32:37.069 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-13:32:37.089 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-13:32:37.105 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-13:32:37.105 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-13:32:37.207 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-13:32:37.207 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2181 ms
-13:32:37.432 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-13:32:37.573 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-13:32:37.677 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-13:32:38.232 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-13:32:38.273 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-13:32:38.500 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ea3a513
-13:32:38.502 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-13:32:38.585 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-13:32:38.586 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-13:32:38.616 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+11:07:11.066 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+11:07:11.794 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:07:11.809 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 7.486 seconds (process running for 8.438)
+11:07:14.407 [http-nio-8080-exec-3] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:07:14.407 [http-nio-8080-exec-3] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:07:14.409 [http-nio-8080-exec-3] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11:10:41.435 [http-nio-8080-exec-6] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
+13:13:32.321 [EnterpriseManagementDataSourcePool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Thread starvation or clock leap detected (housekeeper delta=1h33m53s991ms986µs500ns).
+13:16:36.376 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+13:16:37.037 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+13:16:37.049 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:16:37.053 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
+13:16:37.059 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
+13:17:04.111 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 24060 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
+13:17:04.115 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
+13:17:05.326 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:17:05.507 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 168 ms. Found 9 JPA repository interfaces.
+13:17:06.523 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+13:17:06.526 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+13:17:06.532 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+13:17:06.550 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:17:06.551 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+13:17:06.662 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:17:06.663 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2477 ms
+13:17:06.855 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:17:06.944 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+13:17:07.032 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13:17:07.407 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:17:07.452 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
+13:17:07.630 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cd7f381
+13:17:07.633 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
+13:17:07.696 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13:17:07.697 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13:17:07.719 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -156,629 +126,20 @@ This generated password is for development use only. Your security configuration
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-13:32:40.112 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-13:32:40.385 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-13:32:40.976 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-13:32:41.600 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-13:32:41.629 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+13:17:09.310 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:17:09.552 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:17:10.112 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+13:17:10.786 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:17:10.815 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: bd5d0b20-252f-4ee2-b616-8c73f75c62db
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-13:32:41.639 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-13:32:42.397 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-13:32:42.407 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 8.057 seconds (process running for 9.219)
-13:32:58.014 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13:32:58.014 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-13:32:58.017 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-13:32:58.550 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-13:34:05.037 [http-nio-8080-exec-4] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJzYWxhcnk6dmlldyIsImVtcGxveWVlOm1hbmFnZSJdLCJpYXQiOjE3NDc5NzgzNzgsImV4cCI6MTc0ODg0MjM3OH0.sTVCpNxmXRO3qZaT6oLl7JPN6kCUFmyaoL0dxAnOdY4
-13:34:05.080 [http-nio-8080-exec-4] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-13:34:05.080 [http-nio-8080-exec-4] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-13:34:36.948 [http-nio-8080-exec-5] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-13:34:37.004 [http-nio-8080-exec-6] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJzYWxhcnk6dmlldyIsImVtcGxveWVlOm1hbmFnZSJdLCJpYXQiOjE3NDc5Nzg0NzYsImV4cCI6MTc0ODg0MjQ3Nn0.fqEZ2JWZd7y0vf2bx6U4b2XMuWz8pi3BecCgBK01tfA
-13:34:37.008 [http-nio-8080-exec-6] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-13:34:37.008 [http-nio-8080-exec-6] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-13:38:49.292 [http-nio-8080-exec-9] [] WARN  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: 用户不存在
-13:39:12.689 [http-nio-8080-exec-10] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-13:40:54.229 [http-nio-8080-exec-3] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-13:40:54.281 [http-nio-8080-exec-4] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJzYWxhcnk6dmlldyIsImVtcGxveWVlOm1hbmFnZSJdLCJpYXQiOjE3NDc5Nzg4NTQsImV4cCI6MTc0ODg0Mjg1NH0.uOWO7yDvXMhx43DHrm063MshODnIhYyMy2tiq9mIPek
-13:40:54.285 [http-nio-8080-exec-4] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-13:40:54.285 [http-nio-8080-exec-4] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-13:41:12.886 [http-nio-8080-exec-5] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-13:41:12.933 [http-nio-8080-exec-6] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJlbXBsb3llZTptYW5hZ2UiLCJzYWxhcnk6dmlldyJdLCJpYXQiOjE3NDc5Nzg4NzIsImV4cCI6MTc0ODg0Mjg3Mn0.8PE90yk5nsDo-MMN8GHd2liJBkuIX6_MDm8mt_6gnnU
-13:41:12.937 [http-nio-8080-exec-6] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-13:41:12.937 [http-nio-8080-exec-6] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-13:53:16.557 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-13:53:17.137 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-13:53:17.144 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-13:53:17.147 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-13:53:17.160 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-13:53:27.996 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 42192 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-13:53:27.999 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-13:53:28.987 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-13:53:29.108 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 9 JPA repository interfaces.
-13:53:29.957 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-13:53:29.960 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-13:53:29.966 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-13:53:29.982 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-13:53:29.982 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-13:53:30.083 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-13:53:30.083 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2023 ms
-13:53:30.269 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-13:53:30.358 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-13:53:30.421 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-13:53:30.800 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-13:53:30.847 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-13:53:31.030 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f030c72
-13:53:31.032 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-13:53:31.097 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-13:53:31.098 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-13:53:31.120 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-13:53:32.685 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-13:53:33.068 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-13:53:33.640 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-13:53:34.230 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-13:53:34.256 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: ad20258c-fff3-401c-80e4-ad4b67683a8d
+Using generated security password: e9566cc2-f554-4904-b0a5-a994e1bfae23
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-13:53:34.268 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-13:53:34.959 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-13:53:34.969 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 7.598 seconds (process running for 8.647)
-13:54:36.536 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13:54:36.537 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-13:54:36.540 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-14:05:25.735 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-14:05:26.368 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-14:05:26.374 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-14:05:26.376 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-14:05:26.388 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-14:05:34.144 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 37704 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-14:05:34.147 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-14:05:35.207 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-14:05:35.343 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 9 JPA repository interfaces.
-14:05:36.079 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-14:05:36.082 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-14:05:36.087 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-14:05:36.098 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-14:05:36.098 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-14:05:36.200 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-14:05:36.200 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1994 ms
-14:05:36.364 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-14:05:36.421 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-14:05:36.472 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-14:05:36.784 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-14:05:36.814 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-14:05:36.964 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@4449a60b
-14:05:36.966 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-14:05:37.025 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-14:05:37.026 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-14:05:37.055 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-14:05:38.321 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-14:05:38.575 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-14:05:39.109 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-14:05:39.643 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-14:05:39.667 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: f4966dab-32a1-4d4c-96e0-05e062d2812b
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-14:05:39.676 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-14:05:40.369 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-14:05:40.379 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 6.884 seconds (process running for 7.894)
-14:05:52.178 [http-nio-8080-exec-3] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-14:05:52.179 [http-nio-8080-exec-3] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-14:05:52.181 [http-nio-8080-exec-3] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-14:05:52.631 [http-nio-8080-exec-3] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-14:07:35.961 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-14:07:36.534 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-14:07:36.541 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-14:07:36.543 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-14:07:36.553 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-14:07:44.048 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 38252 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-14:07:44.052 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-14:07:44.944 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-14:07:45.070 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 9 JPA repository interfaces.
-14:07:45.790 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-14:07:45.792 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-14:07:45.797 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-14:07:45.811 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-14:07:45.812 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-14:07:45.900 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-14:07:45.900 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1796 ms
-14:07:46.093 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-14:07:46.142 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-14:07:46.196 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-14:07:46.494 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-14:07:46.524 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-14:07:46.673 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@25464154
-14:07:46.676 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-14:07:46.736 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-14:07:46.738 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-14:07:46.760 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-14:07:48.050 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-14:07:48.315 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-14:07:48.815 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-14:07:49.345 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-14:07:49.379 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 97227305-a8a8-4976-a968-e46cd560e141
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-14:07:49.387 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-14:07:50.066 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-14:07:50.077 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 6.699 seconds (process running for 7.727)
-14:07:57.000 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-14:07:57.001 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-14:07:57.002 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-14:08:08.463 [http-nio-8080-exec-4] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-14:09:33.109 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-14:09:33.689 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-14:09:33.696 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-14:09:33.698 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-14:09:33.706 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-14:09:41.543 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 17740 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-14:09:41.545 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-14:09:42.680 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-14:09:42.869 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 163 ms. Found 9 JPA repository interfaces.
-14:09:43.757 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-14:09:43.760 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-14:09:43.766 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-14:09:43.778 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-14:09:43.779 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-14:09:43.869 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-14:09:43.870 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2263 ms
-14:09:44.041 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-14:09:44.099 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-14:09:44.158 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-14:09:44.472 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-14:09:44.517 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-14:09:44.686 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6814262d
-14:09:44.688 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-14:09:44.761 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-14:09:44.764 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-14:09:44.785 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-14:09:46.240 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-14:09:46.507 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-14:09:47.045 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-14:09:47.582 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-14:09:47.609 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 441040b9-318b-48a2-a37d-1dfe43cf61da
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-14:09:47.617 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-14:09:48.287 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-14:09:48.305 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 7.427 seconds (process running for 8.427)
-14:09:57.892 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-14:09:57.893 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-14:09:57.894 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-14:09:58.334 [http-nio-8080-exec-1] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-14:12:35.766 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-14:12:36.349 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-14:12:36.357 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-14:12:36.358 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-14:12:36.371 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-14:12:44.001 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 19864 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-14:12:44.004 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-14:12:45.120 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-14:12:45.274 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 9 JPA repository interfaces.
-14:12:46.114 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-14:12:46.118 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-14:12:46.124 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-14:12:46.139 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-14:12:46.140 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-14:12:46.228 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-14:12:46.228 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2167 ms
-14:12:46.412 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-14:12:46.468 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-14:12:46.527 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-14:12:46.866 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-14:12:46.910 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-14:12:47.095 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6814262d
-14:12:47.097 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-14:12:47.155 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-14:12:47.157 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-14:12:47.175 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-14:12:48.595 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-14:12:48.856 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-14:12:49.376 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-14:12:49.918 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-14:12:49.943 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: c319b5ab-bb4d-407c-ae58-9d4c54935864
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-14:12:49.970 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-14:12:50.666 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-14:12:50.679 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 7.402 seconds (process running for 8.423)
-14:12:59.451 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-14:12:59.451 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-14:12:59.453 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-14:12:59.904 [http-nio-8080-exec-2] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-14:59:39.177 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-14:59:39.780 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-14:59:39.787 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-14:59:39.790 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-14:59:39.794 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-14:59:49.104 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 36400 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-14:59:49.107 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-14:59:50.457 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-14:59:50.623 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 152 ms. Found 9 JPA repository interfaces.
-14:59:51.529 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-14:59:51.532 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-14:59:51.540 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-14:59:51.556 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-14:59:51.557 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-14:59:51.658 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-14:59:51.658 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2487 ms
-14:59:51.860 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-14:59:51.951 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-14:59:52.020 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-14:59:52.460 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-14:59:52.502 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-14:59:52.714 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6814262d
-14:59:52.717 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-14:59:52.783 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-14:59:52.785 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-14:59:52.816 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-14:59:54.493 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-14:59:54.772 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-14:59:55.345 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-14:59:55.933 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-14:59:55.958 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: a246306b-0376-49eb-9b08-a96f8a9917d9
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-14:59:55.968 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-14:59:56.690 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-14:59:56.700 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 8.316 seconds (process running for 9.689)
-15:00:15.167 [http-nio-8080-exec-3] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-15:00:15.168 [http-nio-8080-exec-3] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-15:00:15.169 [http-nio-8080-exec-3] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-15:00:15.651 [http-nio-8080-exec-3] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-15:07:00.230 [http-nio-8080-exec-7] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【EnterServiceImpl】 | Login: zhangwei 登录成功
-15:07:56.221 [http-nio-8080-exec-2] [] INFO  c.a.e.c.sysLogger.impl.SysLoggerImpl - 【AuthInfoFilter.doFilterInternal】 | doFilterInternal: token = : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6aGFuZ3dlaSIsInVzZXJJZCI6IjUwMDAwMDAxIiwicGVybWlzc2lvbnMiOlsibGVhdmU6YXBwcm92ZSIsInVzZXI6bWFuYWdlIiwiYXR0ZW5kYW5jZTptYW5hZ2UiLCJzYWxhcnk6dmlldyIsImVtcGxveWVlOm1hbmFnZSJdLCJpYXQiOjE3NDc5ODQwMjAsImV4cCI6MTc0ODg0ODAyMH0.jOfSfr2ElDe4gtQyBis_RzU93UDrKQ9_GAxMo0ZzPYM
-15:07:56.264 [http-nio-8080-exec-2] [] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-15:07:56.265 [http-nio-8080-exec-2] [] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'message' at row 1
-16:16:40.526 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-16:16:41.184 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-16:16:41.224 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-16:16:41.241 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-16:16:41.250 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-16:16:51.558 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 21576 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-16:16:51.561 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-16:16:53.730 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-16:16:53.915 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 170 ms. Found 9 JPA repository interfaces.
-16:16:55.001 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-16:16:55.006 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-16:16:55.026 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-16:16:55.044 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-16:16:55.044 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-16:16:55.137 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-16:16:55.137 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3505 ms
-16:16:55.318 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-16:16:55.412 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-16:16:55.464 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-16:16:55.904 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-16:16:55.959 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-16:16:56.202 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b9d4b0
-16:16:56.205 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-16:16:56.323 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-16:16:56.324 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-16:16:56.351 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-16:16:57.838 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-16:16:58.269 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-16:16:58.973 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-16:16:59.596 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-16:16:59.628 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: ab51459e-48b5-46ca-a0aa-2a48b1af2d3f
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-16:16:59.643 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-16:17:00.445 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-16:17:00.456 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 9.577 seconds (process running for 11.409)
-16:47:06.954 [EnterpriseManagementDataSourcePool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Thread starvation or clock leap detected (housekeeper delta=19m10s654ms283µs).
-17:02:02.874 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-17:02:08.477 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 7480 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-17:02:08.479 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-17:02:09.292 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-17:02:09.413 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 9 JPA repository interfaces.
-17:02:10.105 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-17:02:10.108 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-17:02:10.113 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-17:02:10.129 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-17:02:10.129 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-17:02:10.218 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-17:02:10.218 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1694 ms
-17:02:10.387 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-17:02:10.475 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-17:02:10.532 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-17:02:10.863 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-17:02:10.907 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-17:02:11.058 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@18513c23
-17:02:11.060 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-17:02:11.118 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-17:02:11.119 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-17:02:11.141 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-17:02:12.413 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-17:02:12.713 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-17:02:14.052 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-17:02:14.590 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-17:02:14.612 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 43d57584-614e-4016-bc3b-3954b636dcd8
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-17:02:14.618 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-17:02:15.192 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-17:02:15.201 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 7.196 seconds (process running for 7.907)
-17:29:49.527 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:29:49.527 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17:29:49.529 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-18:31:37.362 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-18:31:37.701 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-18:31:37.707 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-18:31:37.709 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-18:31:37.712 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-18:31:47.990 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 37348 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-18:31:47.992 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-18:31:49.107 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-18:31:49.220 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 9 JPA repository interfaces.
-18:31:49.988 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-18:31:49.991 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-18:31:49.996 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-18:31:50.010 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-18:31:50.010 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-18:31:50.091 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-18:31:50.091 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2043 ms
-18:31:50.237 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-18:31:50.325 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-18:31:50.372 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-18:31:50.689 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-18:31:50.729 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-18:31:50.877 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@8549c5f
-18:31:50.879 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-18:31:50.947 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-18:31:50.948 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-18:31:50.973 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-18:31:52.280 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-18:31:52.536 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-18:31:53.044 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-18:31:53.532 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-18:31:53.556 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 3a182292-48b6-4ecd-bb3b-2aa920143055
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-18:31:53.563 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-18:31:54.165 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-18:31:54.173 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 6.637 seconds (process running for 8.378)
-18:34:23.272 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-18:34:23.272 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-18:34:23.274 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-20:56:28.898 [EnterpriseManagementDataSourcePool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Thread starvation or clock leap detected (housekeeper delta=1h29m37s145ms498µs400ns).
-21:54:50.671 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-21:54:51.030 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-21:54:51.036 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-21:54:51.038 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-21:54:51.042 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-21:54:58.453 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 34108 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-21:54:58.456 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-21:54:59.263 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-21:54:59.374 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 9 JPA repository interfaces.
-21:55:00.045 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-21:55:00.048 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-21:55:00.052 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-21:55:00.067 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-21:55:00.067 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-21:55:00.151 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-21:55:00.152 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1652 ms
-21:55:00.344 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-21:55:00.456 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-21:55:00.531 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-21:55:00.873 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-21:55:00.911 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-21:55:01.063 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2570b316
-21:55:01.065 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-21:55:01.126 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-21:55:01.127 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-21:55:01.145 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-21:55:02.379 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-21:55:02.647 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-21:55:03.076 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-21:55:03.539 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-21:55:03.559 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 7d2d1e23-a883-4a5a-84c0-9be55196c958
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-21:55:03.565 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-21:55:04.117 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-21:55:04.125 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 6.173 seconds (process running for 6.911)
-21:55:20.265 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-21:55:20.265 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-21:55:20.266 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-22:39:38.595 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-22:39:38.949 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-22:39:38.953 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-22:39:38.955 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-22:39:38.959 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-22:39:42.338 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 21868 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-22:39:42.341 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-22:39:43.102 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-22:39:43.213 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 9 JPA repository interfaces.
-22:39:43.884 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-22:39:43.888 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-22:39:43.892 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-22:39:43.906 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-22:39:43.907 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-22:39:43.997 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-22:39:43.998 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1614 ms
-22:39:44.177 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-22:39:44.294 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-22:39:44.372 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-22:39:44.676 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-22:39:44.721 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-22:39:44.873 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@7df3da0b
-22:39:44.874 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-22:39:44.940 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-22:39:44.941 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-22:39:44.962 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-22:39:46.207 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-22:39:46.455 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-22:39:46.916 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-22:39:47.381 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-22:39:47.403 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: 01e2eb9d-1988-43d1-9ab5-863ee088a99f
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-22:39:47.410 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-22:39:47.995 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-22:39:48.004 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 6.15 seconds (process running for 6.911)
-22:39:57.650 [http-nio-8080-exec-2] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-22:39:57.650 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-22:39:57.651 [http-nio-8080-exec-2] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-23:07:11.341 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-23:07:11.736 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-23:07:11.740 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:07:11.742 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown initiated...
-23:07:11.749 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Shutdown completed.
-23:07:15.332 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Starting EnterpriseManagementSbApplication using Java 17.0.12 with PID 5904 (D:\JAVAWEB\Enterprise-Management-SB\target\classes started by jyj in D:\JAVAWEB\Enterprise-Management-SB)
-23:07:15.334 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - No active profile set, falling back to 1 default profile: "default"
-23:07:16.067 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:07:16.164 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 9 JPA repository interfaces.
-23:07:16.785 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-23:07:16.787 [main] [] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
-23:07:16.791 [main] [] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
-23:07:16.801 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-23:07:16.801 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-23:07:16.876 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:07:16.877 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1502 ms
-23:07:17.013 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:07:17.067 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
-23:07:17.110 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-23:07:17.341 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:07:17.370 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Starting...
-23:07:17.500 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ffe3d42
-23:07:17.502 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - EnterpriseManagementDataSourcePool - Start completed.
-23:07:17.555 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-23:07:17.556 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-23:07:17.578 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (EnterpriseManagementDataSourcePool)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-23:07:18.622 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-23:07:18.872 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:07:19.290 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-23:07:19.717 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:07:19.738 [main] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: ab776f52-feac-4e53-99bf-986877c9338a
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-23:07:19.745 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-23:07:20.300 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-23:07:20.308 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 5.428 seconds (process running for 6.103)
-23:07:32.493 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23:07:32.493 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-23:07:32.494 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+13:17:10.826 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+13:17:11.580 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+13:17:11.596 [main] [] INFO  c.a.e.EnterpriseManagementSbApplication - Started EnterpriseManagementSbApplication in 8.146 seconds (process running for 9.12)
+13:17:16.658 [http-nio-8080-exec-4] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:17:16.659 [http-nio-8080-exec-4] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:17:16.661 [http-nio-8080-exec-4] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:05:12.304 [EnterpriseManagementDataSourcePool housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - EnterpriseManagementDataSourcePool - Thread starvation or clock leap detected (housekeeper delta=12m2s443ms390µs700ns).

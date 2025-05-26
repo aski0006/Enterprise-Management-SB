@@ -9,9 +9,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 @RestController
 @RequestMapping("/api/attendance")
 public class AttendanceController {
@@ -22,7 +22,7 @@ public class AttendanceController {
     }
 
     @GetMapping("/team")
-    public ResponseEntity<List<AttendanceRecordRequest>> getTeamAttendance(
+    public ResponseEntity<Map<String, Object>> getTeamAttendance(
             @RequestParam(required = false) Long recordId,
             @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") LocalDateTime clockIn,
             @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") LocalDateTime clockOut,
@@ -37,12 +37,26 @@ public class AttendanceController {
         query.setEmployeeId(employeeId);
 
         List<AttendanceRecordRequest> records = attendanceServiceImpl.getTeamAttendance(query);
-        return ResponseEntity.ok(records);
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("code", "200");
+        response.put("message", "成功");
+        response.put("data", records);
+        response.put("ITEMS", new HashMap<>());
+
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping("/department-stats")
     public ResponseEntity<Map<String, Object>> getDepartmentStats() {
         Map<String, Object> stats = attendanceServiceImpl.getSimpleDepartmentStats();
-        return ResponseEntity.ok(stats);
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("code", "200");
+        response.put("message", "成功");
+        response.put("data", stats);
+        response.put("ITEMS", new HashMap<>());
+
+        return ResponseEntity.ok(response);
     }
 }

@@ -11,7 +11,9 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/leave")
@@ -21,23 +23,38 @@ public class LeaveController {
 
     // 获取待审批请假申请（只返回PENDING状态）
     @GetMapping("/pending")
-    public ResponseEntity<List<LeaveRecordRequest>> getPendingLeaveApplications() {
-        return ResponseEntity.ok(leaveService.getPendingLeaveApplications());
+    public ResponseEntity<Map<String, Object>> getPendingLeaveApplications() {
+        List<LeaveRecordRequest> pendingLeaves = leaveService.getPendingLeaveApplications();
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("code", "200");
+        response.put("message", "成功获取待审批请假列表");
+        response.put("data", pendingLeaves);
+        response.put("ITEMS", new HashMap<>());
+
+        return ResponseEntity.ok(response);
     }
 
     // 获取历史请假记录（只返回APPROVED/REJECTED状态）
     @GetMapping("/history")
-    public ResponseEntity<List<LeaveRecordRequest>> getLeaveHistory(){
-        return ResponseEntity.ok(leaveService.getLeaveHistory());
-}
+    public ResponseEntity<Map<String, Object>> getLeaveHistory() {
+        List<LeaveRecordRequest> historyLeaves = leaveService.getLeaveHistory();
 
-    // 审批请假申请
-    @PostMapping("/approve")
-    public ResponseEntity<Void> approveLeaveApplication(
-            @RequestBody @Valid ApprovalRequestRequest request,
-            @AuthenticationPrincipal UserDetails userDetails) {
-        Long userId = Long.parseLong(userDetails.getUsername()); // 改为Long
-        leaveService.processLeaveApproval(request, userId);
-        return ResponseEntity.ok().build();
+        Map<String, Object> response = new HashMap<>();
+        response.put("code", "200");
+        response.put("message", "成功获取历史请假记录");
+        response.put("data", historyLeaves);
+        response.put("ITEMS", new HashMap<>());
+
+        return ResponseEntity.ok(response);
     }
 }
+//    // 审批请假申请
+//    @PostMapping("/approve")
+//    public ResponseEntity<Void> approveLeaveApplication(
+//            @RequestBody @Valid ApprovalRequestRequest request,
+//            @AuthenticationPrincipal UserDetails userDetails) {
+//        Long userId = Long.parseLong(userDetails.getUsername()); // 改为Long
+//        leaveService.processLeaveApproval(request, userId);
+//        return ResponseEntity.ok().build();
+//    }
